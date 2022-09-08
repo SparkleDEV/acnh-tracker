@@ -1,0 +1,77 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"required": ["data"],
+	"properties": {
+		"data": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "A fish entry",
+				"required": ["id", "name_key", "place", "times", "northern_months", "southern_months", "price", "shadow_size"],
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "An unique identifier for the fish"
+					},
+					"name_key": {
+						"type": "string",
+						"description": "The i18n key for the name of the fish"
+					},
+					"place": {
+						"type": "string",
+						"enum": ["pier", "pond", "river", "river_clifftop", "river_clifftop_and_pond", "river_mouth", "sea"],
+						"description": "An enum that contains the location where the fish spawns"
+					},
+					"times": {
+						"type": "string",
+						"description": "A string that describes the times at which the fish can be caught",
+						"examples": ["All day"]
+					},
+					"southern_times": {
+						"type": "string",
+						"description": "A string that describes the times at which the fish can be caught on the southern hemisphere",
+						"examples": ["All day"]
+					},
+					"shadow_size": {
+						"type": "string",
+						"description": "The size of the fish's shadow",
+						"enum": [
+							"tiny",
+							"small",
+							"medium",
+							"medium_with_fin",
+							"large",
+							"very_large",
+							"long_and_thin",
+							"huge",
+							"huge_with_fin"
+						]
+					},
+					"northern_months": {
+						"type": "array",
+						"description": "An array that contains all the months from the northern hemisphere in that the fish spawns",
+						"items": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12
+						}
+					},
+					"southern_months": {
+						"type": "array",
+						"description": "An array that contains all the months from the southern hemisphere in that the fish spawns",
+						"items": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12
+						}
+					},
+					"price": {
+						"type": "integer",
+						"description": "The price in bells that the fish is worth"
+					}
+				}
+			}
+		}
+	}
+}
