@@ -8,6 +8,13 @@
 				>Export data</a
 			>
 		</div>
+		<div class="locale-selection">
+			<select name="locale" class="locale-select" v-model="locale" @change="changeLocale">
+				<option value="en">English</option>
+				<option value="de">German</option>
+			</select>
+			<label for="locale">(only affects names)</label>
+		</div>
 		<input type="file" ref="fileInput" style="display: none" @change="importData" />
 		<FishTable :northern_hemisphere="northern_hemisphere" :current_month="current_month" />
 	</div>
@@ -21,8 +28,12 @@ export default {
 	data() {
 		return {
 			northern_hemisphere: this.$store.getters.isOnNorthernHemisphere,
-			current_month: new Date().getMonth() + 1
+			current_month: new Date().getMonth() + 1,
+			locale: 'en'
 		}
+	},
+	mounted() {
+		this.locale = this.$store.state.locale
 	},
 	methods: {
 		exportData() {
@@ -42,6 +53,9 @@ export default {
 		},
 		pickFile() {
 			this.$refs.fileInput.click()
+		},
+		changeLocale() {
+			this.$store.commit('setLocale', this.locale)
 		}
 	}
 }
@@ -75,5 +89,16 @@ export default {
 	position: absolute;
 	top: rem-calc(16);
 	right: rem-calc(16);
+}
+
+.locale-selection {
+	position: absolute;
+	top: rem-calc(16);
+	left: rem-calc(16);
+
+	label {
+		color: $white;
+		margin-left: rem-calc(8);
+	}
 }
 </style>

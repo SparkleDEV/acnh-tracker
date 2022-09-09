@@ -146,13 +146,6 @@ export default {
 		display: flex;
 		align-items: center;
 
-		select {
-			margin-left: rem-calc(8);
-			padding: rem-calc(4);
-			border-radius: 5px;
-			border-color: $gray;
-		}
-
 		label {
 			color: #eee;
 		}

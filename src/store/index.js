@@ -18,6 +18,7 @@ export default createStore({
 			let data = {}
 
 			data.caught_fish = state.caught_fish
+			data.locale = state.locale
 
 			return JSON.stringify(data)
 		}
@@ -43,8 +44,10 @@ export default createStore({
 			try {
 				let data = JSON.parse(content)
 				state.caught_fish = data.caught_fish
+				state.locale = data.locale
 
 				localStorage.setItem('caught_fish', JSON.stringify(data.caught_fish))
+				localStorage.setItem('locale', data.locale)
 				alert('Data has been imported successfully (page reload is recommended)')
 			} catch {
 				alert("Imported data couldn't been parsed")

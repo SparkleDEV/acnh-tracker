@@ -3,6 +3,8 @@
 </template>
 
 <style lang="scss">
+@use '@/assets/scss/util' as *;
+
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -16,5 +18,13 @@ body {
 	background-repeat: repeat-x;
 	background-size: 100%;
 	background-attachment: fixed;
+}
+
+/* -=[Global Styles]=- */
+select {
+	margin-left: rem-calc(8);
+	padding: rem-calc(4);
+	border-radius: 5px;
+	border-color: $gray;
 }
 </style>
