@@ -2,26 +2,6 @@
 	"$schema": "./schemas/fish.schema.json",
 	"data": [
 		{
-			"id": "tuna",
-			"name_key": "fish.name.tuna",
-			"place": "pier",
-			"shadow_size": "huge",
-			"times": "All day",
-			"price": 7000,
-			"northern_months": [1, 2, 3, 4, 11, 12],
-			"southern_months": [5, 6, 7, 8, 9, 10]
-		},
-		{
-			"id": "tadpole",
-			"name_key": "fish.name.tadpole",
-			"place": "pond",
-			"shadow_size": "tiny",
-			"times": "All day",
-			"price": 100,
-			"northern_months": [1, 9, 10, 11, 12],
-			"southern_months": [3, 4, 5, 6, 7]
-		},
-		{
 			"id": "anchovy",
 			"name_key": "fish.name.anchovy",
 			"place": "sea",
@@ -32,15 +12,184 @@
 			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 		},
 		{
+			"id": "angelfish",
+			"name_key": "fish.name.angelfish",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "4pm - 9am",
+			"price": 3000,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "arapaima",
+			"name_key": "fish.name.arapaima",
+			"place": "river",
+			"shadow_size": "huge",
+			"times": "4pm - 9am",
+			"price": 10000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "arowana",
+			"name_key": "fish.name.arowana",
+			"place": "river",
+			"shadow_size": "large",
+			"times": "4pm - 9am",
+			"price": 10000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "barred_knifejaw",
+			"name_key": "fish.name.barred_knifejaw",
+			"place": "sea",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 5000,
+			"northern_months": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [3, 4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "barreleye",
+			"name_key": "fish.name.barreleye",
+			"place": "sea",
+			"shadow_size": "small",
+			"times": "9pm - 4am",
+			"price": 15000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "betta",
+			"name_key": "fish.name.betta",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "9am - 4pm",
+			"price": 2500,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "bitterling",
+			"name_key": "fish.name.bitterling",
+			"place": "river",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 900,
+			"northern_months": [1, 2, 3, 11, 12],
+			"southern_months": [1, 2, 3, 11, 12]
+		},
+		{
+			"id": "black_bass",
+			"name_key": "fish.name.black_bass",
+			"place": "river",
+			"shadow_size": "large",
+			"times": "All day",
+			"price": 400,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "blowfish",
+			"name_key": "fish.name.blowfish",
+			"place": "sea",
+			"shadow_size": "medium",
+			"times": "9pm - 4am",
+			"price": 5000,
+			"northern_months": [1, 2, 11, 12],
+			"southern_months": [1, 2, 11, 12]
+		},
+		{
+			"id": "blue_marlin",
+			"name_key": "fish.name.blue_marlin",
+			"place": "pier",
+			"shadow_size": "huge",
+			"times": "All day",
+			"price": 10000,
+			"northern_months": [1, 2, 3, 4, 7, 8, 9, 11, 12],
+			"southern_months": [1, 2, 3, 4, 7, 8, 9, 11, 12]
+		},
+		{
+			"id": "bluegill",
+			"name_key": "fish.name.bluegill",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "9am - 4pm",
+			"price": 180,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "butterfly_fish",
+			"name_key": "fish.name.butterfly_fish",
+			"place": "sea",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 1000,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "carp",
+			"name_key": "fish.name.carp",
+			"place": "pond",
+			"shadow_size": "large",
+			"times": "All day",
+			"price": 300,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "catfish",
+			"name_key": "fish.name.catfish",
+			"place": "pond",
+			"shadow_size": "large",
+			"times": "4pm - 9am",
+			"price": 800,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "char",
+			"name_key": "fish.name.char",
+			"place": "river_clifftop_and_pond",
+			"shadow_size": "medium",
+			"times": "4pm - 9am (Mar-Jun) All day (Sep-Nov)",
+			"price": 3800,
+			"northern_months": [3, 4, 5, 6, 9, 10, 11],
+			"southern_months": [3, 4, 5, 6, 9, 10, 11]
+		},
+		{
 			"id": "cherry_salmon",
 			"name_key": "fish.name.cherry_salmon",
 			"place": "river_clifftop",
 			"shadow_size": "medium",
 			"times": "4pm - 9am",
-			"southern_times": "All day",
 			"price": 1000,
 			"northern_months": [3, 4, 5, 6, 9, 10, 11],
-			"southern_months": [3, 4, 5, 9, 10, 11, 12]
+			"southern_months": [3, 4, 5, 6, 9, 10, 11]
+		},
+		{
+			"id": "clown_fish",
+			"name_key": "fish.name.clown_fish",
+			"place": "sea",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 650,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "coelacanth",
+			"name_key": "fish.name.coelacanth",
+			"place": "sea",
+			"shadow_size": "huge",
+			"times": "All day",
+			"price": 15000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 		},
 		{
 			"id": "crawfish",
@@ -50,7 +199,607 @@
 			"times": "All day",
 			"price": 200,
 			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "crucian_carp",
+			"name_key": "fish.name.crucian_carp",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 160,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "dab",
+			"name_key": "fish.name.dab",
+			"place": "sea",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 300,
+			"northern_months": [1, 2, 3, 4, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 10, 11, 12]
+		},
+		{
+			"id": "dace",
+			"name_key": "fish.name.dace",
+			"place": "river",
+			"shadow_size": "medium",
+			"times": "4pm - 9am",
+			"price": 240,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "dorado",
+			"name_key": "fish.name.dorado",
+			"place": "river",
+			"shadow_size": "very_large",
+			"times": "4am - 9pm",
+			"price": 15000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "football_fish",
+			"name_key": "fish.name.football_fish",
+			"place": "sea",
+			"shadow_size": "large",
+			"times": "4pm - 9am",
+			"price": 2500,
+			"northern_months": [1, 2, 3, 11, 12],
+			"southern_months": [1, 2, 3, 11, 12]
+		},
+		{
+			"id": "freshwater_goby",
+			"name_key": "fish.name.freshwater_goby",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "4pm - 9am",
+			"price": 400,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "frog",
+			"name_key": "fish.name.frog",
+			"place": "pond",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 120,
+			"northern_months": [5, 6, 7, 8],
+			"southern_months": [5, 6, 7, 8]
+		},
+		{
+			"id": "gar",
+			"name_key": "fish.name.gar",
+			"place": "pond",
+			"shadow_size": "very_large",
+			"times": "4pm - 9am",
+			"price": 6000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "giant_snakehead",
+			"name_key": "fish.name.giant_snakehead",
+			"place": "pond",
+			"shadow_size": "large",
+			"times": "9am - 4pm",
+			"price": 5500,
+			"northern_months": [6, 7, 8],
+			"southern_months": [6, 7, 8]
+		},
+		{
+			"id": "giant_trevally",
+			"name_key": "fish.name.giant_trevally",
+			"place": "pier",
+			"shadow_size": "very_large",
+			"times": "All day",
+			"price": 4500,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "golden_trout",
+			"name_key": "fish.name.golden_trout",
+			"place": "river_clifftop",
+			"shadow_size": "medium",
+			"times": "4pm - 9am",
+			"price": 15000,
+			"northern_months": [3, 4, 5, 9, 10, 11],
+			"southern_months": [3, 4, 5, 9, 10, 11]
+		},
+		{
+			"id": "goldfish",
+			"name_key": "fish.name.goldfish",
+			"place": "pond",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 1300,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "great_white_shark",
+			"name_key": "fish.name.great_white_shark",
+			"place": "sea",
+			"shadow_size": "huge_with_fin",
+			"times": "4pm - 9am",
+			"price": 15000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "guppy",
+			"name_key": "fish.name.guppy",
+			"place": "river",
+			"shadow_size": "tiny",
+			"times": "9am - 4pm",
+			"price": 1300,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "hammerhead_shark",
+			"name_key": "fish.name.hammerhead_shark",
+			"place": "sea",
+			"shadow_size": "huge_with_fin",
+			"times": "4pm - 9am",
+			"price": 8000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "horse_mackerel",
+			"name_key": "fish.name.horse_mackerel",
+			"place": "sea",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 150,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "killifish",
+			"name_key": "fish.name.killifish",
+			"place": "pond",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 300,
+			"northern_months": [4, 5, 6, 7, 8],
+			"southern_months": [4, 5, 6, 7, 8]
+		},
+		{
+			"id": "king_salmon",
+			"name_key": "fish.name.king_salmon",
+			"place": "river_mouth",
+			"shadow_size": "very_large",
+			"times": "All day",
+			"price": 1800,
+			"northern_months": [9],
+			"southern_months": [9]
+		},
+		{
+			"id": "koi",
+			"name_key": "fish.name.koi",
+			"place": "pond",
+			"shadow_size": "large",
+			"times": "4pm - 9am",
+			"price": 4000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "loach",
+			"name_key": "fish.name.loach",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 400,
+			"northern_months": [3, 4, 5],
+			"southern_months": [3, 4, 5]
+		},
+		{
+			"id": "mahi-mahi",
+			"name_key": "fish.name.mahi-mahi",
+			"place": "pier",
+			"shadow_size": "very_large",
+			"times": "All day",
+			"price": 6000,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "mitten_crab",
+			"name_key": "fish.name.mitten_crab",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "4pm - 9am",
+			"price": 2000,
+			"northern_months": [9, 10, 11],
+			"southern_months": [9, 10, 11]
+		},
+		{
+			"id": "moray_eel",
+			"name_key": "fish.name.moray_eel",
+			"place": "sea",
+			"shadow_size": "long_and_thin",
+			"times": "All day",
+			"price": 2000,
+			"northern_months": [8, 9, 10],
+			"southern_months": [8, 9, 10]
+		},
+		{
+			"id": "napoleonfish",
+			"name_key": "fish.name.napoleonfish",
+			"place": "sea",
+			"shadow_size": "huge",
+			"times": "4am - 9pm",
+			"price": 10000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "neon_tetra",
+			"name_key": "fish.name.neon_tetra",
+			"place": "river",
+			"shadow_size": "tiny",
+			"times": "9am - 4pm",
+			"price": 500,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "nibble_fish",
+			"name_key": "fish.name.nibble_fish",
+			"place": "river",
+			"shadow_size": "tiny",
+			"times": "9am - 4pm",
+			"price": 1500,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "oarfish",
+			"name_key": "fish.name.oarfish",
+			"place": "sea",
+			"shadow_size": "huge",
+			"times": "All day",
+			"price": 9000,
+			"northern_months": [1, 2, 3, 4, 5, 12],
+			"southern_months": [1, 2, 3, 4, 5, 12]
+		},
+		{
+			"id": "ocean_sunfish",
+			"name_key": "fish.name.ocean_sunfish",
+			"place": "sea",
+			"shadow_size": "huge_with_fin",
+			"times": "4am - 9pm",
+			"price": 4000,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "olive_flounder",
+			"name_key": "fish.name.olive_flounder",
+			"place": "sea",
+			"shadow_size": "very_large",
+			"times": "All day",
+			"price": 800,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "pale_chub",
+			"name_key": "fish.name.pale_chub",
+			"place": "river",
+			"shadow_size": "tiny",
+			"times": "9am - 4pm",
+			"price": 200,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "pike",
+			"name_key": "fish.name.pike",
+			"place": "river",
+			"shadow_size": "very_large",
+			"times": "All day",
+			"price": 1800,
+			"northern_months": [9, 10, 11, 12],
+			"southern_months": [9, 10, 11, 12]
+		},
+		{
+			"id": "piranha",
+			"name_key": "fish.name.piranha",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "9am - 4pm & 9pm - 4am",
+			"price": 2500,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "pond_smelt",
+			"name_key": "fish.name.pond_smelt",
+			"place": "river",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 400,
+			"northern_months": [1, 2, 12],
+			"southern_months": [1, 2, 12]
+		},
+		{
+			"id": "pop-eyed_goldfish",
+			"name_key": "fish.name.pop-eyed_goldfish",
+			"place": "pond",
+			"shadow_size": "tiny",
+			"times": "9am - 4pm",
+			"price": 1300,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "puffer_fish",
+			"name_key": "fish.name.puffer_fish",
+			"place": "sea",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 250,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "rainbowfish",
+			"name_key": "fish.name.rainbowfish",
+			"place": "river",
+			"shadow_size": "tiny",
+			"times": "9am - 4pm",
+			"price": 800,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "ranchu_goldfish",
+			"name_key": "fish.name.ranchu_goldfish",
+			"place": "pond",
+			"shadow_size": "small",
+			"times": "9am - 4pm",
+			"price": 4500,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "ray",
+			"name_key": "fish.name.ray",
+			"place": "sea",
+			"shadow_size": "very_large",
+			"times": "4am - 9pm",
+			"price": 3000,
+			"northern_months": [8, 9, 10, 11],
+			"southern_months": [8, 9, 10, 11]
+		},
+		{
+			"id": "red_snapper",
+			"name_key": "fish.name.red_snapper",
+			"place": "sea",
+			"shadow_size": "large",
+			"times": "All day",
+			"price": 3000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "ribbon_eel",
+			"name_key": "fish.name.ribbon_eel",
+			"place": "sea",
+			"shadow_size": "long_and_thin",
+			"times": "All day",
+			"price": 600,
+			"northern_months": [6, 7, 8, 9, 10],
+			"southern_months": [6, 7, 8, 9, 10]
+		},
+		{
+			"id": "saddled_bichir",
+			"name_key": "fish.name.saddled_bichir",
+			"place": "river",
+			"shadow_size": "large",
+			"times": "9pm - 4am",
+			"price": 4000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "salmon",
+			"name_key": "fish.name.salmon",
+			"place": "river_mouth",
+			"shadow_size": "large",
+			"times": "All day",
+			"price": 700,
+			"northern_months": [9],
+			"southern_months": [9]
+		},
+		{
+			"id": "saw_shark",
+			"name_key": "fish.name.saw_shark",
+			"place": "sea",
+			"shadow_size": "huge_with_fin",
+			"times": "4pm - 9am",
+			"price": 12000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "sea_bass",
+			"name_key": "fish.name.sea_bass",
+			"place": "sea",
+			"shadow_size": "very_large",
+			"times": "All day",
+			"price": 400,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "sea_butterfly",
+			"name_key": "fish.name.sea_butterfly",
+			"place": "sea",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 1000,
+			"northern_months": [1, 2, 3, 12],
+			"southern_months": [1, 2, 3, 12]
+		},
+		{
+			"id": "sea_horse",
+			"name_key": "fish.name.sea_horse",
+			"place": "sea",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 1100,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "snapping_turtle",
+			"name_key": "fish.name.snapping_turtle",
+			"place": "river",
+			"shadow_size": "large",
+			"times": "9pm - 4am",
+			"price": 5000,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "soft-shelled_turtle",
+			"name_key": "fish.name.soft-shelled_turtle",
+			"place": "river",
+			"shadow_size": "large",
+			"times": "4pm - 9am",
+			"price": 3750,
+			"northern_months": [8, 9],
+			"southern_months": [8, 9]
+		},
+		{
+			"id": "squid",
+			"name_key": "fish.name.squid",
+			"place": "sea",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 500,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 12]
+		},
+		{
+			"id": "stringfish",
+			"name_key": "fish.name.stringfish",
+			"place": "river_clifftop",
+			"shadow_size": "very_large",
+			"times": "4pm - 9am",
+			"price": 15000,
+			"northern_months": [1, 2, 3, 12],
+			"southern_months": [1, 2, 3, 12]
+		},
+		{
+			"id": "sturgeon",
+			"name_key": "fish.name.sturgeon",
+			"place": "river_mouth",
+			"shadow_size": "huge",
+			"times": "All day",
+			"price": 10000,
+			"northern_months": [1, 2, 3, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 9, 10, 11, 12]
+		},
+		{
+			"id": "suckerfish",
+			"name_key": "fish.name.suckerfish",
+			"place": "sea",
+			"shadow_size": "huge_with_fin",
+			"times": "All day",
+			"price": 1500,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "surgeonfish",
+			"name_key": "fish.name.surgeonfish",
+			"place": "sea",
+			"shadow_size": "small",
+			"times": "All day",
+			"price": 1000,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "sweetfish",
+			"name_key": "fish.name.sweetfish",
+			"place": "river",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 900,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "tadpole",
+			"name_key": "fish.name.tadpole",
+			"place": "pond",
+			"shadow_size": "tiny",
+			"times": "All day",
+			"price": 100,
+			"northern_months": [3, 4, 5, 6, 7],
+			"southern_months": [3, 4, 5, 6, 7]
+		},
+		{
+			"id": "tilapia",
+			"name_key": "fish.name.tilapia",
+			"place": "river",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 800,
+			"northern_months": [6, 7, 8, 9, 10],
+			"southern_months": [6, 7, 8, 9, 10]
+		},
+		{
+			"id": "tuna",
+			"name_key": "fish.name.tuna",
+			"place": "pier",
+			"shadow_size": "huge",
+			"times": "All day",
+			"price": 7000,
+			"northern_months": [1, 2, 3, 4, 11, 12],
+			"southern_months": [1, 2, 3, 4, 11, 12]
+		},
+		{
+			"id": "whale_shark",
+			"name_key": "fish.name.whale_shark",
+			"place": "sea",
+			"shadow_size": "huge_with_fin",
+			"times": "All day",
+			"price": 13000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "yellow_perch",
+			"name_key": "fish.name.yellow_perch",
+			"place": "river",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 300,
+			"northern_months": [1, 2, 3, 10, 11, 12],
 			"southern_months": [1, 2, 3, 10, 11, 12]
+		},
+		{
+			"id": "zebra_turkeyfish",
+			"name_key": "fish.name.zebra_turkeyfish",
+			"place": "sea",
+			"shadow_size": "medium",
+			"times": "All day",
+			"price": 500,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10, 11]
 		}
 	]
 }
