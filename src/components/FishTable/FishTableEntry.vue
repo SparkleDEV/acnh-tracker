@@ -147,7 +147,55 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.spawnsNow {
-	background-color: #19e485;
+@use '@/assets/scss/util' as *;
+
+.fish-table-entry {
+	background-color: $row-background;
+
+	&:nth-child(2n) {
+		background-color: mix($row-background, #000, 90); // #f8c057;
+
+		.months {
+			background-color: mix($not-spawning, #000, 92);
+
+			&.spawnsNow {
+				background-color: mix($spawning, #000, 92);
+			}
+		}
+	}
+	// padding: rem-calc(4) 0;
+}
+
+td {
+	padding: rem-calc(2) 2ch;
+}
+
+.name {
+	min-width: 4ch;
+}
+
+.place {
+	min-width: 5ch;
+}
+
+.shadow-size {
+	min-width: 11ch;
+}
+
+.times {
+	min-width: 15ch;
+}
+
+.price {
+	min-width: 5ch;
+}
+
+.months {
+	min-width: 6ch;
+	background-color: $not-spawning;
+
+	&.spawnsNow {
+		background-color: $spawning;
+	}
 }
 </style>

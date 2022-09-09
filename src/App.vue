@@ -10,4 +10,11 @@
 	text-align: center;
 	color: #2c3e50;
 }
+
+body {
+	background-image: url('@/assets/images/background.png');
+	background-repeat: repeat-x;
+	background-size: 100%;
+	background-attachment: fixed;
+}
 </style>

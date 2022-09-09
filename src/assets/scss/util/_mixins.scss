@@ -1,0 +1,18 @@
+@use '@/assets/scss/util/functions' as *;
+
+@mixin button($background-color, $color: #fff, $font-size-px: 16) {
+	background-color: $background-color;
+	color: $color;
+	padding: rem-calc(8) rem-calc(16);
+	border-radius: rem-calc(8);
+	border: none;
+	font-size: rem-calc($font-size-px);
+	transition: background-color 0.3s;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 0 rem-calc(4);
+
+	&:hover {
+		background-color: mix($background-color, #fff, 50);
+	}
+}

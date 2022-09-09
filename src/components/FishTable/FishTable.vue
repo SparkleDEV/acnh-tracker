@@ -1,5 +1,5 @@
 <template>
-	<div class="fish-table-view">
+	<div class="fish-table-view page-content">
 		<div class="toolbar">
 			<!-- TODO (08 Sep 22): Implement -->
 			<!-- <div class="tool">
@@ -116,7 +116,6 @@ export default {
 				if (acaught > bcaught) return 1
 				return -1
 			})
-			console.log('🚀 ~ file: FishTable.vue ~ line 119 ~ this.fishes=this.fishes.sort ~ fishes', this.fishes)
 		},
 		displayFish(months) {
 			if (this.show_only_disappearing) {
@@ -133,3 +132,56 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+@use '@/assets/scss/util' as *;
+
+.toolbar {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: rem-calc(4);
+
+	.tool {
+		padding: 0 rem-calc(4);
+		display: flex;
+		align-items: center;
+
+		select {
+			margin-left: rem-calc(8);
+			padding: rem-calc(4);
+			border-radius: 5px;
+			border-color: $gray;
+		}
+
+		label {
+			color: #eee;
+		}
+	}
+}
+
+.fish-table {
+	border-spacing: 0;
+	border: 2px solid mix($row-background, $black, 70);
+	border-radius: 4px;
+	position: relative;
+	color: $black;
+
+	thead {
+		background-color: mix($row-background, $black, 80);
+		position: sticky;
+		top: -1px;
+
+		td {
+			padding: rem-calc(6) rem-calc(4);
+			border-bottom: 2px solid mix($row-background, $black, 70);
+			font-weight: bold;
+		}
+	}
+}
+
+.page-content {
+	max-width: rem-calc(1000);
+	margin: 0 auto;
+	padding: rem-calc(50) rem-calc(80);
+}
+</style>

@@ -45,7 +45,7 @@ export default createStore({
 				state.caught_fish = data.caught_fish
 
 				localStorage.setItem('caught_fish', JSON.stringify(data.caught_fish))
-				alert('Data has been imported successfully')
+				alert('Data has been imported successfully (page reload is recommended)')
 			} catch {
 				alert("Imported data couldn't been parsed")
 				console.error(`Import error, imported data: ${content}`)
