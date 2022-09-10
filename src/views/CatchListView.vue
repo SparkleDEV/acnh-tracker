@@ -29,15 +29,23 @@
 			:show_only_disappearing="show_only_disappearing"
 			v-if="tab == 'bug'"
 		/>
+		<CreatureTable
+			:northern_hemisphere="northern_hemisphere"
+			:current_month="current_month"
+			:show_only_spawning="show_only_spawning"
+			:show_only_disappearing="show_only_disappearing"
+			v-if="tab == 'creatures'"
+		/>
 	</div>
 </template>
 
 <script>
 import FishTable from '@/components/FishTable/FishTable.vue'
 import BugTable from '@/components/BugTable/BugTable.vue'
+import CreatureTable from '@/components/CreatureTable/CreatureTable.vue'
 
 export default {
-	components: { FishTable, BugTable },
+	components: { FishTable, BugTable, CreatureTable },
 	data() {
 		return {
 			northern_hemisphere: this.$store.getters.isOnNorthernHemisphere,

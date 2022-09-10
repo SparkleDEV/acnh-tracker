@@ -12,6 +12,7 @@
 			<select name="tab" v-model="tab" @change="updateTab">
 				<option value="fish">Fish</option>
 				<option value="bug">Bugs</option>
+				<option value="creatures">Sea creatures</option>
 			</select>
 		</div>
 		<div class="tool">
