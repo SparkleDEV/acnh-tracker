@@ -1,0 +1,365 @@
+{
+	"$schema": "./schemas/seacreatures.schema.json",
+	"data": [
+		{
+			"id": "abalone",
+			"name_key": "seacreature.name.abalone",
+			"times": "4pm - 9am",
+			"shadow_size": "medium",
+			"price": 2000,
+			"northern_months": [1, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "acorn_barnacle",
+			"name_key": "seacreature.name.acorn_barnacle",
+			"times": "All day",
+			"shadow_size": "tiny",
+			"price": 600,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "chambered_nautilus",
+			"name_key": "seacreature.name.chambered_nautilus",
+			"times": "4pm - 9am",
+			"shadow_size": "medium",
+			"price": 1800,
+			"northern_months": [3, 4, 5, 6, 9, 10, 11],
+			"southern_months": [3, 4, 5, 6, 9, 10, 11]
+		},
+		{
+			"id": "dungeness_crab",
+			"name_key": "seacreature.name.dungeness_crab",
+			"times": "All day",
+			"shadow_size": "medium",
+			"price": 1900,
+			"northern_months": [1, 2, 3, 4, 5, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 11, 12]
+		},
+		{
+			"id": "firefly_squid",
+			"name_key": "seacreature.name.firefly_squid",
+			"times": "9pm - 4am",
+			"shadow_size": "tiny",
+			"price": 1400,
+			"northern_months": [3, 4, 5, 6],
+			"southern_months": [3, 4, 5, 6]
+		},
+		{
+			"id": "flatworm",
+			"name_key": "seacreature.name.flatworm",
+			"times": "4pm - 9am",
+			"shadow_size": "tiny",
+			"price": 700,
+			"northern_months": [8, 9],
+			"southern_months": [8, 9]
+		},
+		{
+			"id": "gazami_crab",
+			"name_key": "seacreature.name.gazami_crab",
+			"times": "All day",
+			"shadow_size": "medium",
+			"price": 2200,
+			"northern_months": [6, 7, 8, 9, 10, 11],
+			"southern_months": [6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "giant_isopod",
+			"name_key": "seacreature.name.giant_isopod",
+			"times": "9am - 4pm & 9pm - 4am",
+			"shadow_size": "medium",
+			"price": 12000,
+			"northern_months": [7, 8, 9, 10],
+			"southern_months": [7, 8, 9, 10]
+		},
+		{
+			"id": "gigas_giant_clam",
+			"name_key": "seacreature.name.gigas_giant_clam",
+			"times": "All day",
+			"shadow_size": "huge",
+			"price": 15000,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "horseshoe_crab",
+			"name_key": "seacreature.name.horseshoe_crab",
+			"times": "9pm - 4am",
+			"shadow_size": "medium",
+			"price": 2500,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "lobster",
+			"name_key": "seacreature.name.lobster",
+			"times": "All day",
+			"shadow_size": "large",
+			"price": 4500,
+			"northern_months": [1, 4, 5, 6, 12],
+			"southern_months": [1, 4, 5, 6, 12]
+		},
+		{
+			"id": "mantis_shrimp",
+			"name_key": "seacreature.name.mantis_shrimp",
+			"times": "4pm - 9am",
+			"shadow_size": "small",
+			"price": 2500,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "moon_jellyfish",
+			"name_key": "seacreature.name.moon_jellyfish",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 600,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "mussel",
+			"name_key": "seacreature.name.mussel",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 1500,
+			"northern_months": [6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "octopus",
+			"name_key": "seacreature.name.octopus",
+			"times": "All day",
+			"shadow_size": "medium",
+			"price": 1200,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "oyster",
+			"name_key": "seacreature.name.oyster",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 1100,
+			"northern_months": [1, 2, 9, 10, 11, 12],
+			"southern_months": [1, 2, 9, 10, 11, 12]
+		},
+		{
+			"id": "pearl_oyster",
+			"name_key": "seacreature.name.pearl_oyster",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 2800,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "red_king_crab",
+			"name_key": "seacreature.name.red_king_crab",
+			"times": "All day",
+			"shadow_size": "large",
+			"price": 8000,
+			"northern_months": [1, 2, 3, 11, 12],
+			"southern_months": [1, 2, 3, 11, 12]
+		},
+		{
+			"id": "scallop",
+			"name_key": "seacreature.name.scallop",
+			"times": "All day",
+			"shadow_size": "medium",
+			"price": 1200,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "sea_anemone",
+			"name_key": "seacreature.name.sea_anemone",
+			"times": "All day",
+			"shadow_size": "large",
+			"price": 500,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "sea_cucumber",
+			"name_key": "seacreature.name.sea_cucumber",
+			"times": "All day",
+			"shadow_size": "medium",
+			"price": 500,
+			"northern_months": [1, 2, 3, 4, 11, 12],
+			"southern_months": [1, 2, 3, 4, 11, 12]
+		},
+		{
+			"id": "sea_grapes",
+			"name_key": "seacreature.name.sea_grapes",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 900,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "sea_pig",
+			"name_key": "seacreature.name.sea_pig",
+			"times": "4pm - 9am",
+			"shadow_size": "small",
+			"price": 10000,
+			"northern_months": [1, 2, 11, 12],
+			"southern_months": [1, 2, 11, 12]
+		},
+		{
+			"id": "sea_pineapple",
+			"name_key": "seacreature.name.sea_pineapple",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 1500,
+			"northern_months": [4, 5, 6, 7, 8],
+			"southern_months": [4, 5, 6, 7, 8]
+		},
+		{
+			"id": "sea_slug",
+			"name_key": "seacreature.name.sea_slug",
+			"times": "All day",
+			"shadow_size": "tiny",
+			"price": 600,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "sea_star",
+			"name_key": "seacreature.name.sea_star",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 500,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "sea_urchin",
+			"name_key": "seacreature.name.sea_urchin",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 1700,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "seaweed",
+			"name_key": "seacreature.name.seaweed",
+			"times": "All day",
+			"shadow_size": "large",
+			"price": 600,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 10, 11, 12]
+		},
+		{
+			"id": "slate_pencil_urchin",
+			"name_key": "seacreature.name.slate_pencil_urchin",
+			"times": "4pm - 9am",
+			"shadow_size": "medium",
+			"price": 2000,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "snow_crab",
+			"name_key": "seacreature.name.snow_crab",
+			"times": "All day",
+			"shadow_size": "large",
+			"price": 6000,
+			"northern_months": [1, 2, 3, 4, 11, 12],
+			"southern_months": [1, 2, 3, 4, 11, 12]
+		},
+		{
+			"id": "spider_crab",
+			"name_key": "seacreature.name.spider_crab",
+			"times": "All day",
+			"shadow_size": "huge",
+			"price": 12000,
+			"northern_months": [3, 4],
+			"southern_months": [3, 4]
+		},
+		{
+			"id": "spiny_lobster",
+			"name_key": "seacreature.name.spiny_lobster",
+			"times": "9pm - 4am",
+			"shadow_size": "large",
+			"price": 5000,
+			"northern_months": [10, 11, 12],
+			"southern_months": [10, 11, 12]
+		},
+		{
+			"id": "spotted_garden_eel",
+			"name_key": "seacreature.name.spotted_garden_eel",
+			"times": "4am - 9pm",
+			"shadow_size": "small",
+			"price": 1100,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "sweet_shrimp",
+			"name_key": "seacreature.name.sweet_shrimp",
+			"times": "4pm - 9am",
+			"shadow_size": "small",
+			"price": 1400,
+			"northern_months": [1, 2, 9, 10, 11, 12],
+			"southern_months": [1, 2, 9, 10, 11, 12]
+		},
+		{
+			"id": "tiger_prawn",
+			"name_key": "seacreature.name.tiger_prawn",
+			"times": "4pm - 9am",
+			"shadow_size": "small",
+			"price": 3000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "turban_shell",
+			"name_key": "seacreature.name.turban_shell",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 1000,
+			"northern_months": [3, 4, 5, 9, 10, 11, 12],
+			"southern_months": [3, 4, 5, 9, 10, 11, 12]
+		},
+		{
+			"id": "umbrella_octopus",
+			"name_key": "seacreature.name.umbrella_octopus",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 6000,
+			"northern_months": [3, 4, 5, 9, 10, 11],
+			"southern_months": [3, 4, 5, 9, 10, 11]
+		},
+		{
+			"id": "vampire_squid",
+			"name_key": "seacreature.name.vampire_squid",
+			"times": "5pm - 9am",
+			"shadow_size": "medium",
+			"price": 10000,
+			"northern_months": [5, 6, 7, 8],
+			"southern_months": [5, 6, 7, 8]
+		},
+		{
+			"id": "venus_flower_basket",
+			"name_key": "seacreature.name.venus_flower_basket",
+			"times": "All day",
+			"shadow_size": "medium",
+			"price": 5000,
+			"northern_months": [1, 2, 10, 11, 12],
+			"southern_months": [1, 2, 10, 11, 12]
+		},
+		{
+			"id": "whelk",
+			"name_key": "seacreature.name.whelk",
+			"times": "All day",
+			"shadow_size": "small",
+			"price": 1000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		}
+	]
+}

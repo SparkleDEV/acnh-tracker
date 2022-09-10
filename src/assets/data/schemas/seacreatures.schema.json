@@ -1,0 +1,62 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"required": ["data"],
+	"properties": {
+		"data": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "A sea creature entry",
+				"required": ["id", "name_key", "times", "northern_months", "southern_months", "price", "shadow_size"],
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "An unique identifier for the creature"
+					},
+					"name_key": {
+						"type": "string",
+						"description": "The i18n key for the name of the creature"
+					},
+					"times": {
+						"type": "string",
+						"description": "A string that describes the times at which the creature can be caught",
+						"examples": ["All day"]
+					},
+					"southern_times": {
+						"type": "string",
+						"description": "A string that describes the times at which the creature can be caught on the southern hemisphere",
+						"examples": ["All day"]
+					},
+					"shadow_size": {
+						"type": "string",
+						"description": "The size of the creatures shadow",
+						"enum": ["tiny", "small", "medium", "large", "huge"]
+					},
+					"price": {
+						"type": "integer",
+						"description": "The price in bells that the creature is worth"
+					},
+					"northern_months": {
+						"type": "array",
+						"description": "An array that contains all the months from the northern hemisphere in that the creature spawns",
+						"items": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12
+						}
+					},
+					"southern_months": {
+						"type": "array",
+						"description": "An array that contains all the months from the southern hemisphere in that the creature spawns",
+						"items": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12
+						}
+					}
+				}
+			}
+		}
+	}
+}

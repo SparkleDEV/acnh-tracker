@@ -8,6 +8,7 @@
 			"items": {
 				"type": "object",
 				"description": "A bug entry",
+				"required": ["id", "name_key", "place", "times", "northern_months", "southern_months", "price"],
 				"properties": {
 					"id": {
 						"type": "string",
