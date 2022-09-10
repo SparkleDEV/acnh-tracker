@@ -16,7 +16,7 @@
 body {
 	background-image: url('@/assets/images/background.png');
 	background-repeat: repeat-x;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 }
 

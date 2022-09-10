@@ -35,33 +35,35 @@
 				<label for="show_disappearing">Show only disappearing</label>
 			</div>
 		</div>
-		<table class="fish-table">
-			<thead>
-				<td>Caught</td>
-				<td>Name</td>
-				<td>Place</td>
-				<td>Shadow Size</td>
-				<td>Times</td>
-				<td>Price</td>
-				<td>Months</td>
-			</thead>
-			<tbody>
-				<FishTableEntry
-					v-for="f in fishes"
-					:key="f.id"
-					:id="f.id"
-					:name="getFishName(f.name_key)"
-					:place="f.place"
-					:shadow_size="f.shadow_size"
-					:times="northern_hemisphere ? f.times : f.southern_times"
-					:price="f.price"
-					:months="getHemisphereMonths(f)"
-					:spawns_now="spawnsInCurrentMonth(getHemisphereMonths(f))"
-					:display="displayFish(getHemisphereMonths(f))"
-					@sort_event="sortFishList()"
-				/>
-			</tbody>
-		</table>
+		<div class="table-wrapper">
+			<table class="fish-table">
+				<thead>
+					<td>Caught</td>
+					<td>Name</td>
+					<td>Place</td>
+					<td>Shadow Size</td>
+					<td>Times</td>
+					<td>Price</td>
+					<td>Months</td>
+				</thead>
+				<tbody>
+					<FishTableEntry
+						v-for="f in fishes"
+						:key="f.id"
+						:id="f.id"
+						:name="getFishName(f.name_key)"
+						:place="f.place"
+						:shadow_size="f.shadow_size"
+						:times="northern_hemisphere ? f.times : f.southern_times"
+						:price="f.price"
+						:months="getHemisphereMonths(f)"
+						:spawns_now="spawnsInCurrentMonth(getHemisphereMonths(f))"
+						:display="displayFish(getHemisphereMonths(f))"
+						@sort_event="sortFishList()"
+					/>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>
 
@@ -141,6 +143,11 @@ export default {
 	justify-content: flex-end;
 	margin-bottom: rem-calc(4);
 
+	@media (max-width: 730px) {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
 	.tool {
 		padding: 0 rem-calc(4);
 		display: flex;
@@ -158,6 +165,7 @@ export default {
 	border-radius: 4px;
 	position: relative;
 	color: $black;
+	width: 100%;
 
 	thead {
 		background-color: mix($row-background, $black, 80);
@@ -172,9 +180,22 @@ export default {
 	}
 }
 
+.table-wrapper {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		white-space: nowrap;
+		max-width: 100%;
+	}
+}
+
 .page-content {
 	max-width: rem-calc(1000);
 	margin: 0 auto;
 	padding: rem-calc(50) rem-calc(80);
+	width: 100vw;
+
+	@media (max-width: 730px) {
+		padding: rem-calc(50) rem-calc(30);
+	}
 }
 </style>

@@ -83,6 +83,9 @@ export default {
 
 .logo {
 	width: rem-calc(300);
+	@media (max-width: 730px) {
+		margin-top: rem-calc(48);
+	}
 }
 
 .import-export-buttons {
@@ -95,6 +98,13 @@ export default {
 	position: absolute;
 	top: rem-calc(16);
 	left: rem-calc(16);
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 730px) {
+		align-items: flex-start;
+		flex-direction: column;
+	}
 
 	label {
 		color: $white;
