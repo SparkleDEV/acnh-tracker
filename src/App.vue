@@ -4,6 +4,7 @@
 
 <style lang="scss">
 @use '@/assets/scss/util' as *;
+@import '@/assets/scss/globals';
 
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -11,20 +12,5 @@
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-}
-
-body {
-	background-image: url('@/assets/images/background.png');
-	background-repeat: repeat-x;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-/* -=[Global Styles]=- */
-select {
-	margin-left: rem-calc(8);
-	padding: rem-calc(4);
-	border-radius: 5px;
-	border-color: $gray;
 }
 </style>

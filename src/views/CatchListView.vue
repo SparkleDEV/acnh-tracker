@@ -1,6 +1,5 @@
 <template>
 	<div class="catch-list-view">
-		<!-- <h1>ACNH Collectible Tracker</h1> -->
 		<img src="@/assets/images/logo.png" alt="Logo with text saying Animal Crossing Collectible Tracker" class="logo" />
 		<div class="import-export-buttons">
 			<button class="import-btn" @click="pickFile()">Import data</button>
@@ -16,20 +15,37 @@
 			<label for="locale">(only affects names)</label>
 		</div>
 		<input type="file" ref="fileInput" style="display: none" @change="importData" />
-		<FishTable :northern_hemisphere="northern_hemisphere" :current_month="current_month" />
+		<FishTable
+			:northern_hemisphere="northern_hemisphere"
+			:current_month="current_month"
+			:show_only_spawning="show_only_spawning"
+			:show_only_disappearing="show_only_disappearing"
+			v-if="tab == 'fish'"
+		/>
+		<BugTable
+			:northern_hemisphere="northern_hemisphere"
+			:current_month="current_month"
+			:show_only_spawning="show_only_spawning"
+			:show_only_disappearing="show_only_disappearing"
+			v-if="tab == 'bug'"
+		/>
 	</div>
 </template>
 
 <script>
 import FishTable from '@/components/FishTable/FishTable.vue'
+import BugTable from '@/components/BugTable/BugTable.vue'
 
 export default {
-	components: { FishTable },
+	components: { FishTable, BugTable },
 	data() {
 		return {
 			northern_hemisphere: this.$store.getters.isOnNorthernHemisphere,
 			current_month: new Date().getMonth() + 1,
-			locale: 'en'
+			locale: 'en',
+			tab: 'fish',
+			show_only_spawning: false,
+			show_only_disappearing: false
 		}
 	},
 	mounted() {

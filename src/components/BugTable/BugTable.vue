@@ -1,37 +1,35 @@
 <template>
-	<div class="fish-table-view page-content">
+	<div class="bug-table-view page-content">
 		<Toolbar
 			:northern_hemisphere="northern_hemisphere"
 			:current_month="current_month"
 			:show_only_spawning="show_only_spawning"
 			:show_only_disappearing="show_disappearing"
-			tab="fish"
+			tab="bug"
 		/>
 		<div class="table-wrapper">
-			<table class="fish-table">
+			<table class="bug-table">
 				<thead>
 					<td>Caught</td>
 					<td>Name</td>
 					<td>Place</td>
-					<td>Shadow Size</td>
 					<td>Times</td>
 					<td>Price</td>
 					<td>Months</td>
 				</thead>
 				<tbody>
-					<FishTableEntry
-						v-for="f in fishes"
-						:key="f.id"
-						:id="f.id"
-						:name="getFishName(f.name_key)"
-						:place="f.place"
-						:shadow_size="f.shadow_size"
-						:times="northern_hemisphere ? f.times : f.southern_times"
-						:price="f.price"
-						:months="getHemisphereMonths(f)"
-						:spawns_now="spawnsInCurrentMonth(getHemisphereMonths(f))"
-						:display="displayFish(getHemisphereMonths(f))"
-						@sort_event="sortFishList()"
+					<BugTableEntry
+						v-for="b in bug_data"
+						:key="b.id"
+						:id="b.id"
+						:name="getBugName(b.name_key)"
+						:place="b.place"
+						:times="northern_hemisphere ? b.times : b.southern_times"
+						:price="b.price"
+						:months="getHemisphereMonths(b)"
+						:spawns_now="spawnsInCurrentMonth(getHemisphereMonths(b))"
+						:display="displayBug(getHemisphereMonths(b))"
+						@sort_event="sortBugList()"
 					/>
 				</tbody>
 			</table>
@@ -40,24 +38,24 @@
 </template>
 
 <script>
-import fish from '@/assets/data/fish.json'
-import FishTableEntry from '@/components/FishTable/FishTableEntry.vue'
+import bugs from '@/assets/data/bugs.json'
+import BugTableEntry from '@/components/BugTable/BugTableEntry.vue'
 import Toolbar from '@/components/Toolbar.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
-	components: { FishTableEntry, Toolbar },
+	components: { BugTableEntry, Toolbar },
 	props: ['northern_hemisphere', 'current_month', 'show_only_spawning', 'show_only_disappearing'],
 	data() {
 		return {
-			fishes: fish.data
+			bug_data: bugs.data
 		}
 	},
 	methods: {
-		getHemisphereMonths(fish) {
-			return this.northern_hemisphere ? fish.northern_months : fish.southern_months
+		getHemisphereMonths(bug) {
+			return this.northern_hemisphere ? bug.northern_months : bug.southern_months
 		},
-		getFishName(name_key) {
+		getBugName(name_key) {
 			const locale = this.$store.state.locale
 			let name = translations[locale][name_key]
 			return name
@@ -69,24 +67,24 @@ export default {
 			let next_month = parseInt(this.current_month, 10) >= 12 ? 1 : parseInt(this.current_month, 10) + 1
 			return months.includes(next_month)
 		},
-		sortFishList() {
-			this.fishes = fish.data
+		sortBugList() {
+			this.bug_data = bugs.data
 
-			this.fishes = this.fishes.sort((a, b) => {
-				if (this.getFishName(a.name_key) < this.getFishName(b.name_key)) return -1
-				if (this.getFishName(a.name_key) > this.getFishName(b.name_key)) return 1
+			this.bug_data = this.bug_data.sort((a, b) => {
+				if (this.getBugName(a.name_key) < this.getBugName(b.name_key)) return -1
+				if (this.getBugName(a.name_key) > this.getBugName(b.name_key)) return 1
 			})
 
-			this.fishes = this.fishes.sort((a, b) => {
-				const acaught = this.$store.getters.hasCaughtFish(a.id)
-				const bcaught = this.$store.getters.hasCaughtFish(b.id)
+			this.bug_data = this.bug_data.sort((a, b) => {
+				const acaught = this.$store.getters.hasCaughtBug(a.id)
+				const bcaught = this.$store.getters.hasCaughtBug(b.id)
 
 				if (acaught == bcaught) return 0
 				if (acaught > bcaught) return 1
 				return -1
 			})
 		},
-		displayFish(months) {
+		displayBug(months) {
 			if (this.show_only_disappearing) {
 				return this.spawnsInCurrentMonth(months) && !this.spawnsNextMonth(months)
 			}
@@ -97,7 +95,7 @@ export default {
 		}
 	},
 	mounted() {
-		this.sortFishList()
+		this.sortBugList()
 	}
 }
 </script>
@@ -105,7 +103,7 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/scss/util' as *;
 
-.fish-table {
+.bug-table {
 	border-spacing: 0;
 	border: 2px solid mix($row-background, $black, 70);
 	border-radius: 4px;

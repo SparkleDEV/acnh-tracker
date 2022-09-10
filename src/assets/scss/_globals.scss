@@ -1,0 +1,74 @@
+@use '@/assets/scss/util' as *;
+
+body {
+	background-image: url('@/assets/images/background.png');
+	background-repeat: repeat-x;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+select {
+	margin-left: rem-calc(8);
+	padding: rem-calc(4);
+	border-radius: 5px;
+	border-color: $gray;
+}
+
+.page-content {
+	max-width: rem-calc(1000);
+	margin: 0 auto;
+	padding: rem-calc(50) rem-calc(80);
+	width: 100vw;
+
+	@media (max-width: 730px) {
+		padding: rem-calc(50) rem-calc(30);
+	}
+}
+
+.catch-table-entry {
+	background-color: $row-background;
+
+	&:nth-child(2n) {
+		background-color: mix($row-background, #000, 90);
+
+		.months {
+			background-color: mix($not-spawning, #000, 92);
+
+			&.spawnsNow {
+				background-color: mix($spawning, #000, 92);
+			}
+		}
+	}
+	td {
+		padding: rem-calc(2) 2ch;
+	}
+
+	.name {
+		min-width: 4ch;
+	}
+
+	.place {
+		min-width: 5ch;
+	}
+
+	.shadow-size {
+		min-width: 11ch;
+	}
+
+	.times {
+		min-width: 15ch;
+	}
+
+	.price {
+		min-width: 5ch;
+	}
+
+	.months {
+		min-width: 6ch;
+		background-color: $not-spawning;
+
+		&.spawnsNow {
+			background-color: $spawning;
+		}
+	}
+}
