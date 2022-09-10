@@ -1,0 +1,83 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"required": ["data"],
+	"properties": {
+		"data": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "A bug entry",
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "An unique identifier for the bug"
+					},
+					"name_key": {
+						"type": "string",
+						"description": "The i18n key for the name of the bug"
+					},
+					"place": {
+						"type": "string",
+						"enum": [
+							"beach_disguised_as_shells",
+							"flying",
+							"flying_by_hybrid_flowers",
+							"flying_by_light",
+							"hitting_rocks",
+							"beach_rocks",
+							"flowers",
+							"flowers_white",
+							"palm_trees",
+							"ponds_and_rivers",
+							"rocks_and_bushes_rain",
+							"rotten_food",
+							"ground",
+							"ground_rolling_snowballs",
+							"trash_items",
+							"tree_stumps",
+							"trees",
+							"shaking_trees",
+							"under_trees_disguised_as_leaves",
+							"underground",
+							"villagers_heads"
+						],
+						"description": "An enum that contains the location where the bug spawns"
+					},
+					"times": {
+						"type": "string",
+						"description": "A string that describes the times at which the bug can be caught",
+						"examples": ["All day"]
+					},
+					"southern_times": {
+						"type": "string",
+						"description": "A string that describes the times at which the bug can be caught on the southern hemisphere",
+						"examples": ["All day"]
+					},
+					"northern_months": {
+						"type": "array",
+						"description": "An array that contains all the months from the northern hemisphere in that the bug spawns",
+						"items": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12
+						}
+					},
+					"southern_months": {
+						"type": "array",
+						"description": "An array that contains all the months from the southern hemisphere in that the bug spawns",
+						"items": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12
+						}
+					},
+					"price": {
+						"type": "integer",
+						"description": "The price in bells that the bug is worth"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,725 @@
+{
+	"$schema": "./schemas/bugs.schema.json",
+	"data": [
+		{
+			"id": "agrias_butterfly",
+			"name_key": "fish.name.agrias_butterfly",
+			"place": "flying",
+			"times": "8am - 5pm",
+			"price": 3000,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "ant",
+			"name_key": "fish.name.ant",
+			"place": "rotten_food",
+			"times": "All day",
+			"price": 80,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "atlas_moth",
+			"name_key": "fish.name.atlas_moth",
+			"place": "trees",
+			"times": "7pm - 4am",
+			"price": 3000,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "bagworm",
+			"name_key": "fish.name.bagworm",
+			"place": "shaking_trees",
+			"times": "All day",
+			"price": 600,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "banded_dragonfly",
+			"name_key": "fish.name.banded_dragonfly",
+			"place": "flying",
+			"times": "8am - 5pm",
+			"price": 4500,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "bell_cricket",
+			"name_key": "fish.name.bell_cricket",
+			"place": "ground",
+			"times": "5pm - 8am",
+			"price": 430,
+			"northern_months": [9, 10],
+			"southern_months": [9, 10]
+		},
+		{
+			"id": "blue_weevil_beetle",
+			"name_key": "fish.name.blue_weevil_beetle",
+			"place": "palm_trees",
+			"times": "All day",
+			"price": 800,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "brown_cicada",
+			"name_key": "fish.name.brown_cicada",
+			"place": "trees",
+			"times": "8am - 5pm",
+			"price": 250,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "centipede",
+			"name_key": "fish.name.centipede",
+			"place": "hitting_rocks",
+			"times": "4pm - 11pm",
+			"price": 300,
+			"northern_months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+		},
+		{
+			"id": "cicada_shell",
+			"name_key": "fish.name.cicada_shell",
+			"place": "trees",
+			"times": "All day",
+			"price": 10,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "citrus_long-horned_beetle",
+			"name_key": "fish.name.citrus_long-horned_beetle",
+			"place": "tree_stumps",
+			"times": "All day",
+			"price": 350,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "common_bluebottle",
+			"name_key": "fish.name.common_bluebottle",
+			"place": "flying",
+			"times": "4am - 7pm",
+			"price": 300,
+			"northern_months": [4, 5, 6, 7, 8],
+			"southern_months": [4, 5, 6, 7, 8]
+		},
+		{
+			"id": "common_butterfly",
+			"name_key": "fish.name.common_butterfly",
+			"place": "flying",
+			"times": "4am - 7pm",
+			"price": 160,
+			"northern_months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+		},
+		{
+			"id": "cricket",
+			"name_key": "fish.name.cricket",
+			"place": "ground",
+			"times": "5pm - 8am",
+			"price": 130,
+			"northern_months": [9, 10, 11],
+			"southern_months": [9, 10, 11]
+		},
+		{
+			"id": "cyclommatus_stag",
+			"name_key": "fish.name.cyclommatus_stag",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 8000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "damselfly",
+			"name_key": "fish.name.damselfly",
+			"place": "flying",
+			"times": "All day",
+			"price": 500,
+			"northern_months": [1, 2, 11, 12],
+			"southern_months": [1, 2, 11, 12]
+		},
+		{
+			"id": "darner_dragonfly",
+			"name_key": "fish.name.darner_dragonfly",
+			"place": "flying",
+			"times": "8am - 5pm",
+			"price": 230,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "diving_beetle",
+			"name_key": "fish.name.diving_beetle",
+			"place": "ponds_and_rivers",
+			"times": "8am - 7pm",
+			"price": 800,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "drone_beetle",
+			"name_key": "fish.name.drone_beetle",
+			"place": "trees",
+			"times": "All day",
+			"price": 200,
+			"northern_months": [6, 7, 8],
+			"southern_months": [6, 7, 8]
+		},
+		{
+			"id": "dung_beetle",
+			"name_key": "fish.name.dung_beetle",
+			"place": "ground_rolling_snowballs",
+			"times": "All day",
+			"price": 3000,
+			"northern_months": [1, 2, 12],
+			"southern_months": [1, 2, 12]
+		},
+		{
+			"id": "earth-boring_dung_beetle",
+			"name_key": "fish.name.earth-boring_dung_beetle",
+			"place": "ground",
+			"times": "All day",
+			"price": 300,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "emperor_butterfly",
+			"name_key": "fish.name.emperor_butterfly",
+			"place": "flying",
+			"times": "5pm - 8am",
+			"price": 4000,
+			"northern_months": [1, 2, 3, 6, 7, 8, 9, 12],
+			"southern_months": [1, 2, 3, 6, 7, 8, 9, 12]
+		},
+		{
+			"id": "evening_cicada",
+			"name_key": "fish.name.evening_cicada",
+			"place": "trees",
+			"times": "4am - 8am & 4pm - 7pm",
+			"price": 550,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "firefly",
+			"name_key": "fish.name.firefly",
+			"place": "flying",
+			"times": "7pm - 4am",
+			"price": 300,
+			"northern_months": [6],
+			"southern_months": [6]
+		},
+		{
+			"id": "flea",
+			"name_key": "fish.name.flea",
+			"place": "villagers_heads",
+			"times": "All day",
+			"price": 70,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "fly",
+			"name_key": "fish.name.fly",
+			"place": "trash_items",
+			"times": "All day",
+			"price": 60,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "giant_cicada",
+			"name_key": "fish.name.giant_cicada",
+			"place": "trees",
+			"times": "8am - 5pm",
+			"price": 500,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "giant_stag",
+			"name_key": "fish.name.giant_stag",
+			"place": "trees",
+			"times": "11pm - 8am",
+			"price": 10000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "giant_water_bug",
+			"name_key": "fish.name.giant_water_bug",
+			"place": "ponds_and_rivers",
+			"times": "7pm - 8am",
+			"price": 2000,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "giraffe_stag",
+			"name_key": "fish.name.giraffe_stag",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 12000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "golden_stag",
+			"name_key": "fish.name.golden_stag",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 12000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "goliath_beetle",
+			"name_key": "fish.name.goliath_beetle",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 8000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "grasshopper",
+			"name_key": "fish.name.grasshopper",
+			"place": "ground",
+			"times": "8am - 5pm",
+			"price": 160,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "great_purple_emperor",
+			"name_key": "fish.name.great_purple_emperor",
+			"place": "flying",
+			"times": "4am - 7pm",
+			"price": 3000,
+			"northern_months": [5, 6, 7, 8],
+			"southern_months": [5, 6, 7, 8]
+		},
+		{
+			"id": "hermit_crab",
+			"name_key": "fish.name.hermit_crab",
+			"place": "beach_disguised_as_shells",
+			"times": "7pm - 8am",
+			"price": 1000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "honeybee",
+			"name_key": "fish.name.honeybee",
+			"place": "flying",
+			"times": "8am - 5pm",
+			"price": 200,
+			"northern_months": [3, 4, 5, 6, 7],
+			"southern_months": [3, 4, 5, 6, 7]
+		},
+		{
+			"id": "horned_atlas",
+			"name_key": "fish.name.horned_atlas",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 8000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "horned_dynastid",
+			"name_key": "fish.name.horned_dynastid",
+			"place": "trees",
+			"times": "5pm - 8am",
+			"price": 1350,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "horned_elephant",
+			"name_key": "fish.name.horned_elephant",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 8000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "horned_hercules",
+			"name_key": "fish.name.horned_hercules",
+			"place": "palm_trees",
+			"times": "5pm - 8am",
+			"price": 12000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "jewel_beetle",
+			"name_key": "fish.name.jewel_beetle",
+			"place": "tree_stumps",
+			"times": "All day",
+			"price": 2400,
+			"northern_months": [4, 5, 6, 7, 8],
+			"southern_months": [4, 5, 6, 7, 8]
+		},
+		{
+			"id": "ladybug",
+			"name_key": "fish.name.ladybug",
+			"place": "flowers",
+			"times": "8am - 5pm",
+			"price": 200,
+			"northern_months": [3, 4, 5, 6, 10],
+			"southern_months": [3, 4, 5, 6, 10]
+		},
+		{
+			"id": "long_locust",
+			"name_key": "fish.name.long_locust",
+			"place": "ground",
+			"times": "8am - 7pm",
+			"price": 200,
+			"northern_months": [4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "madagascan_sunset_moth",
+			"name_key": "fish.name.madagascan_sunset_moth",
+			"place": "flying",
+			"times": "8am - 4pm",
+			"price": 2500,
+			"northern_months": [4, 5, 6, 7, 8, 9],
+			"southern_months": [4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "man-faced_stink_bug",
+			"name_key": "fish.name.man-faced_stink_bug",
+			"place": "flowers",
+			"times": "7pm - 8am",
+			"price": 1000,
+			"northern_months": [3, 4, 5, 6, 7, 8, 9, 10],
+			"southern_months": [3, 4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "mantis",
+			"name_key": "fish.name.mantis",
+			"place": "flowers",
+			"times": "8am - 5pm",
+			"price": 430,
+			"northern_months": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [3, 4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "migratory_locust",
+			"name_key": "fish.name.migratory_locust",
+			"place": "ground",
+			"times": "8am - 7pm",
+			"price": 600,
+			"northern_months": [8, 9, 10, 11],
+			"southern_months": [8, 9, 10, 11]
+		},
+		{
+			"id": "miyama_stag",
+			"name_key": "fish.name.miyama_stag",
+			"place": "trees",
+			"times": "All day",
+			"price": 1000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "mole_cricket",
+			"name_key": "fish.name.mole_cricket",
+			"place": "underground",
+			"times": "All day",
+			"price": 500,
+			"northern_months": [1, 2, 3, 4, 5, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 11, 12]
+		},
+		{
+			"id": "monarch_butterfly",
+			"name_key": "fish.name.monarch_butterfly",
+			"place": "flying",
+			"times": "4am - 5pm",
+			"price": 140,
+			"northern_months": [9, 10, 11],
+			"southern_months": [9, 10, 11]
+		},
+		{
+			"id": "mosquito",
+			"name_key": "fish.name.mosquito",
+			"place": "flying",
+			"times": "5pm - 4am",
+			"price": 130,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "moth",
+			"name_key": "fish.name.moth",
+			"place": "flying_by_light",
+			"times": "7pm - 4am",
+			"price": 130,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "orchid_mantis",
+			"name_key": "fish.name.orchid_mantis",
+			"place": "flowers_white",
+			"times": "8am - 5pm",
+			"price": 2400,
+			"northern_months": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+			"southern_months": [3, 4, 5, 6, 7, 8, 9, 10, 11]
+		},
+		{
+			"id": "paper_kite_butterfly",
+			"name_key": "fish.name.paper_kite_butterfly",
+			"place": "flying",
+			"times": "8am - 7pm",
+			"price": 1000,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "peacock_butterfly",
+			"name_key": "fish.name.peacock_butterfly",
+			"place": "flying_by_hybrid_flowers",
+			"times": "4am - 7pm",
+			"price": 2500,
+			"northern_months": [3, 4, 5, 6],
+			"southern_months": [3, 4, 5, 6]
+		},
+		{
+			"id": "pill_bug",
+			"name_key": "fish.name.pill_bug",
+			"place": "hitting_rocks",
+			"times": "11pm - 4pm",
+			"price": 250,
+			"northern_months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+		},
+		{
+			"id": "pondskater",
+			"name_key": "fish.name.pondskater",
+			"place": "ponds_and_rivers",
+			"times": "8am - 7pm",
+			"price": 130,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "queen_alexandras_birdwing",
+			"name_key": "fish.name.queen_alexandras_birdwing",
+			"place": "flying",
+			"times": "8am - 4pm",
+			"price": 4000,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "rainbow_stag",
+			"name_key": "fish.name.rainbow_stag",
+			"place": "trees",
+			"times": "7pm - 8am",
+			"price": 6000,
+			"northern_months": [6, 7, 8, 9],
+			"southern_months": [6, 7, 8, 9]
+		},
+		{
+			"id": "rajah_brookes_birdwing",
+			"name_key": "fish.name.rajah_brookes_birdwing",
+			"place": "flying",
+			"times": "8am - 5pm",
+			"price": 2500,
+			"northern_months": [1, 2, 4, 5, 6, 7, 8, 9, 12],
+			"southern_months": [1, 2, 4, 5, 6, 7, 8, 9, 12]
+		},
+		{
+			"id": "red_dragonfly",
+			"name_key": "fish.name.red_dragonfly",
+			"place": "flying",
+			"times": "8am - 7pm",
+			"price": 180,
+			"northern_months": [9, 10],
+			"southern_months": [9, 10]
+		},
+		{
+			"id": "rice_grasshopper",
+			"name_key": "fish.name.rice_grasshopper",
+			"place": "ground",
+			"times": "8am - 7pm",
+			"price": 160,
+			"northern_months": [8, 9, 10, 11],
+			"southern_months": [8, 9, 10, 11]
+		},
+		{
+			"id": "robust_cicada",
+			"name_key": "fish.name.robust_cicada",
+			"place": "trees",
+			"times": "8am - 5pm",
+			"price": 300,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "rosalia_batesi_beetle",
+			"name_key": "fish.name.rosalia_batesi_beetle",
+			"place": "tree_stumps",
+			"times": "All day",
+			"price": 3000,
+			"northern_months": [5, 6, 7, 8, 9],
+			"southern_months": [5, 6, 7, 8, 9]
+		},
+		{
+			"id": "saw_stag",
+			"name_key": "fish.name.saw_stag",
+			"place": "trees",
+			"times": "All day",
+			"price": 2000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "scarab_beetle",
+			"name_key": "fish.name.scarab_beetle",
+			"place": "trees",
+			"times": "11pm - 8am",
+			"price": 10000,
+			"northern_months": [7, 8],
+			"southern_months": [7, 8]
+		},
+		{
+			"id": "scorpion",
+			"name_key": "fish.name.scorpion",
+			"place": "ground",
+			"times": "7pm - 4am",
+			"price": 8000,
+			"northern_months": [5, 6, 7, 8, 9, 10],
+			"southern_months": [5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "snail",
+			"name_key": "fish.name.snail",
+			"place": "rocks_and_bushes_rain",
+			"times": "All day",
+			"price": 250,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "spider",
+			"name_key": "fish.name.spider",
+			"place": "shaking_trees",
+			"times": "7pm - 8am",
+			"price": 600,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "stinkbug",
+			"name_key": "fish.name.stinkbug",
+			"place": "flowers",
+			"times": "All day",
+			"price": 120,
+			"northern_months": [3, 4, 5, 6, 7, 8, 9, 10],
+			"southern_months": [3, 4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "tarantula",
+			"name_key": "fish.name.tarantula",
+			"place": "ground",
+			"times": "7pm - 4am",
+			"price": 8000,
+			"northern_months": [1, 2, 3, 4, 11, 12],
+			"southern_months": [1, 2, 3, 4, 11, 12]
+		},
+		{
+			"id": "tiger_beetle",
+			"name_key": "fish.name.tiger_beetle",
+			"place": "ground",
+			"times": "All day",
+			"price": 1500,
+			"northern_months": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+			"southern_months": [2, 3, 4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": "tiger_butterfly",
+			"name_key": "fish.name.tiger_butterfly",
+			"place": "flying",
+			"times": "4am - 7pm",
+			"price": 240,
+			"northern_months": [3, 4, 5, 6, 7, 8, 9],
+			"southern_months": [3, 4, 5, 6, 7, 8, 9]
+		},
+		{
+			"id": "violin_beetle",
+			"name_key": "fish.name.violin_beetle",
+			"place": "tree_stumps",
+			"times": "All day",
+			"price": 450,
+			"northern_months": [5, 6, 9, 10, 11],
+			"southern_months": [5, 6, 9, 10, 11]
+		},
+		{
+			"id": "walker_cicada",
+			"name_key": "fish.name.walker_cicada",
+			"place": "trees",
+			"times": "8am - 5pm",
+			"price": 400,
+			"northern_months": [8, 9],
+			"southern_months": [8, 9]
+		},
+		{
+			"id": "walking_leaf",
+			"name_key": "fish.name.walking_leaf",
+			"place": "under_trees_disguised_as_leaves",
+			"times": "All day",
+			"price": 600,
+			"northern_months": [7, 8, 9],
+			"southern_months": [7, 8, 9]
+		},
+		{
+			"id": "walking_stick",
+			"name_key": "fish.name.walking_stick",
+			"place": "trees",
+			"times": "4am - 8am & 5pm - 7pm",
+			"price": 600,
+			"northern_months": [7, 8, 9, 10, 11],
+			"southern_months": [7, 8, 9, 10, 11]
+		},
+		{
+			"id": "wasp",
+			"name_key": "fish.name.wasp",
+			"place": "shaking_trees",
+			"times": "All day",
+			"price": 2500,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "wharf_roach",
+			"name_key": "fish.name.wharf_roach",
+			"place": "beach_rocks",
+			"times": "All day",
+			"price": 200,
+			"northern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"southern_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		},
+		{
+			"id": "yellow_butterfly",
+			"name_key": "fish.name.yellow_butterfly",
+			"place": "flying",
+			"times": "4am - 7pm",
+			"price": 160,
+			"northern_months": [3, 4, 5, 6, 9, 10],
+			"southern_months": [3, 4, 5, 6, 9, 10]
+		}
+	]
+}
