@@ -1,0 +1,14 @@
+name: Build Vue
+on: [push]
+jobs:
+  build_vue:
+    runs-on: latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.1
+      with:
+        username: 'SparkleDEV'
+        reponame: 'acnh-tracker'
+        token: ${{ secrets.GITHUB_TOKEN }}
