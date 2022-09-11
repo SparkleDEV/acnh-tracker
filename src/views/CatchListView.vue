@@ -1,6 +1,7 @@
 <template>
 	<div class="catch-list-view">
 		<img src="@/assets/images/logo.png" alt="Logo with text saying Animal Crossing Collectible Tracker" class="logo" />
+		<h3 style="color: #eee; margin-top: 0">( Preview version )</h3>
 		<div class="import-export-buttons">
 			<button class="import-btn" @click="pickFile()">Import data</button>
 			<a class="export-btn" :href="`data:text/plain;charset=utf-8,${exportData()}`" download="export.acnhtrack"

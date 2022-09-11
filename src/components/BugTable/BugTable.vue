@@ -4,7 +4,7 @@
 			:northern_hemisphere="northern_hemisphere"
 			:current_month="current_month"
 			:show_only_spawning="show_only_spawning"
-			:show_only_disappearing="show_disappearing"
+			:show_only_disappearing="show_only_disappearing"
 			tab="bug"
 		/>
 		<div class="table-wrapper">

@@ -33,13 +33,21 @@
 			</select>
 		</div>
 		<div class="tool">
-			<input type="checkbox" name="show_spawning" v-model="show_only_spawning" @change="updateShowOnlySpawning" />
+			<input
+				type="checkbox"
+				name="show_spawning"
+				:checked="show_only_spawning || show_only_disappearing"
+				v-model="show_only_spawning"
+				@change="updateShowOnlySpawning"
+				:disabled="show_only_disappearing"
+			/>
 			<label for="show_spawning">Show only spawning</label>
 		</div>
 		<div class="tool">
 			<input
 				type="checkbox"
 				name="show_disappearing"
+				:checked="show_only_disappearing"
 				v-model="show_only_disappearing"
 				@change="updateShowOnlyDisappearing"
 			/>
