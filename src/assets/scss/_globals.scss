@@ -16,14 +16,33 @@ select {
 }
 
 .page-content {
-	max-width: rem-calc(1000);
 	margin: 0 auto;
 	padding: rem-calc(50) rem-calc(80);
-	width: 100vw;
+	width: 100%;
 
 	@media (max-width: 730px) {
 		padding: rem-calc(50) rem-calc(30);
 	}
+}
+
+.info-page-content {
+	margin: rem-calc(50) rem-calc(80);
+	padding: rem-calc(32);
+	background-color: #f5f5f5;
+	border-radius: 3px;
+
+	@media (max-width: 730px) {
+		margin: rem-calc(50) rem-calc(30);
+	}
+}
+
+.view-page {
+	max-width: rem-calc(1200);
+	width: rem-calc(1200);
+	background-color: rgba($black, 0.3);
+	margin: 0 auto;
+	padding: rem-calc(16) 0;
+	border-radius: 3px;
 }
 
 .catch-table-entry {
@@ -70,6 +89,45 @@ select {
 
 		&.spawnsNow {
 			background-color: $spawning;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.catchable-table-wrapper {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		white-space: nowrap;
+		max-width: 100%;
+	}
+
+	.catchable-table {
+		border-spacing: 0;
+		border: 2px solid mix($row-background, $black, 70);
+		border-radius: 4px;
+		position: relative;
+		color: $black;
+		width: 100%;
+
+		thead {
+			background-color: mix($row-background, $black, 80);
+			position: sticky;
+			top: -1px;
+
+			td {
+				padding: rem-calc(6) rem-calc(4);
+				border-bottom: 2px solid mix($row-background, $black, 70);
+				font-weight: bold;
+			}
 		}
 	}
 }

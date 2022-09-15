@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"required": ["data"],
+	"properties": {
+		"data": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "A song entry",
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "An unique identifier for the bug"
+					},
+					"name_key": {
+						"type": "string",
+						"description": "The i18n key for the name of the song"
+					},
+					"buyable": {
+						"type": "boolean",
+						"description": "If the song can be bought at Nook Shopping"
+					}
+				}
+			}
+		}
+	}
+}

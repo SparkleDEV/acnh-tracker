@@ -13,6 +13,7 @@
 				<option value="fish">Fish</option>
 				<option value="bug">Bugs</option>
 				<option value="creatures">Sea creatures</option>
+				<option value="songs">Songs</option>
 			</select>
 		</div>
 		<div class="tool">
@@ -77,7 +78,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '@/assets/scss/util' as *;
 
 .toolbar {
