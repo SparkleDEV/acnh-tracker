@@ -1,6 +1,20 @@
 <template>
 	<div class="song-table-view page-content">
-		<Toolbar tab="songs" tab_only="true" />
+		<div class="toolbar">
+			<div class="tool tab-tool">
+				<select name="tab" v-model="tab" @change="updateTab">
+					<option value="fish">Fish</option>
+					<option value="bug">Bugs</option>
+					<option value="creatures">Sea creatures</option>
+					<option value="songs">Songs</option>
+				</select>
+			</div>
+			<div class="tool audio-tool">
+				<audio controls ref="audio" class="audio-player">
+					<source ref="audio_source" />
+				</audio>
+			</div>
+		</div>
 		<div class="catchable-table-wrapper">
 			<table class="song-table catchable-table">
 				<thead>
@@ -16,7 +30,8 @@
 						:id="s.id"
 						:name="getSongName(s.name_key)"
 						:buyable="s.buyable"
-						@sort_event="sortFishList()"
+						@sort_event="sortSongList()"
+						@play="playSong"
 					/>
 				</tbody>
 			</table>
@@ -34,7 +49,8 @@ export default {
 	components: { SongTableEntry, Toolbar },
 	data() {
 		return {
-			songs_data: songs.data
+			songs_data: songs.data,
+			tab: 'songs'
 		}
 	},
 	methods: {
@@ -59,6 +75,15 @@ export default {
 				if (acollected > bcollected) return 1
 				return -1
 			})
+		},
+		playSong(song) {
+			this.$refs.audio_source.src = song
+
+			this.$refs.audio.load()
+			this.$refs.audio.play()
+		},
+		updateTab() {
+			this.$parent.tab = this.tab
 		}
 	},
 	mounted() {
@@ -72,5 +97,11 @@ export default {
 
 .page-content {
 	max-width: rem-calc(1000);
+}
+
+.audio-player {
+	position: fixed;
+	bottom: rem-calc(16);
+	right: rem-calc(16);
 }
 </style>

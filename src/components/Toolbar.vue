@@ -16,7 +16,7 @@
 				<option value="songs">Songs</option>
 			</select>
 		</div>
-		<div class="tool" v-if="!tab_only">
+		<div class="tool">
 			<label for="current_month">Select current month:</label>
 			<select name="current_month" v-model="current_month" @change="updateMonth">
 				<option value="1">January</option>
@@ -33,7 +33,7 @@
 				<option value="12">December</option>
 			</select>
 		</div>
-		<div class="tool" v-if="!tab_only">
+		<div class="tool">
 			<input
 				type="checkbox"
 				name="show_spawning"
@@ -44,7 +44,7 @@
 			/>
 			<label for="show_spawning">Show only spawning</label>
 		</div>
-		<div class="tool" v-if="!tab_only">
+		<div class="tool">
 			<input
 				type="checkbox"
 				name="show_disappearing"
@@ -59,7 +59,7 @@
 
 <script>
 export default {
-	props: ['northern_hemisphere', 'current_month', 'show_only_spawning', 'show_only_disappearing', 'tab', 'tab_only'],
+	props: ['northern_hemisphere', 'current_month', 'show_only_spawning', 'show_only_disappearing', 'tab'],
 	methods: {
 		updateMonth() {
 			// It's not stupid if it works!
@@ -78,7 +78,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '@/assets/scss/util' as *;
 
 .toolbar {

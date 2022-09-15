@@ -9,7 +9,9 @@
 			/>
 		</td>
 		<td class="name">{{ name }}</td>
-		<td class="song">-</td>
+		<td class="song">
+			<span @click="emitPlay(require(`@/assets/audio/songs/${id}.mp3`))" class="play-button">Play</span>
+		</td>
 		<td class="buyable" :class="{ is_buyable: buyable }">{{ displayBuyable() }}</td>
 	</tr>
 </template>
@@ -25,10 +27,13 @@ export default {
 			return this.$store.getters.hasCollectedSong(id)
 		},
 		toggleCollectionState() {
-			this.$store.commit('toggleFishCatchState', this.id)
+			this.$store.commit('toggleSongCollectState', this.id)
 		},
 		displayBuyable() {
 			return this.buyable ? 'Yes' : 'No'
+		},
+		emitPlay(song) {
+			this.$emit('play', song)
 		}
 	}
 }
@@ -53,5 +58,10 @@ export default {
 	&.is_buyable {
 		background-color: $spawning;
 	}
+}
+
+.song {
+	text-decoration: underline;
+	cursor: pointer;
 }
 </style>
