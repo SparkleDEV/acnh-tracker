@@ -22,6 +22,7 @@
 			:show_only_disappearing="show_only_disappearing"
 			v-if="tab == 'creatures'"
 		/>
+		<SongTable v-if="tab == 'songs'" />
 	</div>
 </template>
 
@@ -31,9 +32,10 @@ import SiteHead from '@/components/SiteHead.vue'
 import FishTable from '@/components/FishTable/FishTable.vue'
 import BugTable from '@/components/BugTable/BugTable.vue'
 import CreatureTable from '@/components/CreatureTable/CreatureTable.vue'
+import SongTable from '@/components/SongTable/SongTable.vue'
 
 export default {
-	components: { FishTable, BugTable, CreatureTable, SiteHead },
+	components: { FishTable, BugTable, CreatureTable, SongTable, SiteHead },
 	data() {
 		return {
 			northern_hemisphere: this.$store.getters.isOnNorthernHemisphere,
