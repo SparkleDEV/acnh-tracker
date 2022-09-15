@@ -131,15 +131,4 @@ export default {
 		max-width: 100%;
 	}
 }
-
-.page-content {
-	max-width: rem-calc(1000);
-	margin: 0 auto;
-	padding: rem-calc(50) rem-calc(80);
-	width: 100vw;
-
-	@media (max-width: 730px) {
-		padding: rem-calc(50) rem-calc(30);
-	}
-}
 </style>
