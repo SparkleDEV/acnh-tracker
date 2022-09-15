@@ -7,8 +7,8 @@
 			:show_only_disappearing="show_only_disappearing"
 			tab="fish"
 		/>
-		<div class="table-wrapper">
-			<table class="fish-table">
+		<div class="catchable-table-wrapper">
+			<table class="fish-table catchable-table">
 				<thead>
 					<td>Caught</td>
 					<td>Name</td>
@@ -105,43 +105,7 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/scss/util' as *;
 
-.fish-table {
-	border-spacing: 0;
-	border: 2px solid mix($row-background, $black, 70);
-	border-radius: 4px;
-	position: relative;
-	color: $black;
-	width: 100%;
-
-	thead {
-		background-color: mix($row-background, $black, 80);
-		position: sticky;
-		top: -1px;
-
-		td {
-			padding: rem-calc(6) rem-calc(4);
-			border-bottom: 2px solid mix($row-background, $black, 70);
-			font-weight: bold;
-		}
-	}
-}
-
-.table-wrapper {
-	@media (max-width: 1200px) {
-		overflow-x: auto;
-		white-space: nowrap;
-		max-width: 100%;
-	}
-}
-
 .page-content {
 	max-width: rem-calc(1000);
-	margin: 0 auto;
-	padding: rem-calc(50) rem-calc(80);
-	width: 100vw;
-
-	@media (max-width: 730px) {
-		padding: rem-calc(50) rem-calc(30);
-	}
 }
 </style>

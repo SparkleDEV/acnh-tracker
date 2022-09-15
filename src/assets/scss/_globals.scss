@@ -102,3 +102,32 @@ h6 {
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
+
+.catchable-table-wrapper {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		white-space: nowrap;
+		max-width: 100%;
+	}
+
+	.catchable-table {
+		border-spacing: 0;
+		border: 2px solid mix($row-background, $black, 70);
+		border-radius: 4px;
+		position: relative;
+		color: $black;
+		width: 100%;
+
+		thead {
+			background-color: mix($row-background, $black, 80);
+			position: sticky;
+			top: -1px;
+
+			td {
+				padding: rem-calc(6) rem-calc(4);
+				border-bottom: 2px solid mix($row-background, $black, 70);
+				font-weight: bold;
+			}
+		}
+	}
+}
