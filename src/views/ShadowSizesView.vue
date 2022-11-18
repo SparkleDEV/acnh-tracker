@@ -20,40 +20,40 @@ export default {
 		return {
 			images: [
 				{
-					name: 'Tiny shadow of a fish',
-					asset: require('@/assets/images/shadows/tiny.png')
+					name: 'Shadow of a tiny fish',
+					asset: require('@/assets/images/shadows/tiny.webp')
 				},
 				{
-					name: 'Small shadow of a fish',
-					asset: require('@/assets/images/shadows/small.png')
+					name: 'Shadow of a small fish',
+					asset: require('@/assets/images/shadows/small.webp')
 				},
 				{
-					name: 'Medium shadow of a fish',
-					asset: require('@/assets/images/shadows/medium.png')
+					name: 'Shadow of a medium fish',
+					asset: require('@/assets/images/shadows/medium.webp')
 				},
 				{
-					name: 'Medium (with fin) shadow of a fish',
-					asset: require('@/assets/images/shadows/medium_with_fin.png')
+					name: 'Shadow of a medium fish with fin',
+					asset: require('@/assets/images/shadows/medium_with_fin.webp')
 				},
 				{
-					name: 'Large shadow of a fish',
-					asset: require('@/assets/images/shadows/large.png')
+					name: 'Shadow of a large fish',
+					asset: require('@/assets/images/shadows/large.webp')
 				},
 				{
-					name: 'Very large shadow of a fish',
-					asset: require('@/assets/images/shadows/very_large.png')
+					name: 'Shadow of a very large fish',
+					asset: require('@/assets/images/shadows/very_large.webp')
 				},
 				{
-					name: 'Long and thin shadow of a fish',
-					asset: require('@/assets/images/shadows/long_and_thin.png')
+					name: 'Shadow of a long and thin fish',
+					asset: require('@/assets/images/shadows/long_and_thin.webp')
 				},
 				{
-					name: 'Huge shadow of a fish',
-					asset: require('@/assets/images/shadows/huge.png')
+					name: 'Shadow of a huge fish',
+					asset: require('@/assets/images/shadows/huge.webp')
 				},
 				{
-					name: 'Huge (with fin) shadow of a fish',
-					asset: require('@/assets/images/shadows/huge_with_fin.png')
+					name: 'Shadow of a huge fish with fin',
+					asset: require('@/assets/images/shadows/huge_with_fin.webp')
 				}
 			]
 		}

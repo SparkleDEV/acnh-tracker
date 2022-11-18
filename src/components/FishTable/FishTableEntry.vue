@@ -10,7 +10,7 @@
 				{{ getShadowSizeDisplay(shadow_size) }}
 				<div class="size-preview">
 					<img
-						:src="require(`@/assets/images/shadows/${shadow_size}.png`)"
+						:src="require(`@/assets/images/shadows/${shadow_size}.webp`)"
 						:alt="`Preview Image of a fish with the shadow size of ${getShadowSizeDisplay(shadow_size)}`"
 						class="preview-image"
 						width="256"
