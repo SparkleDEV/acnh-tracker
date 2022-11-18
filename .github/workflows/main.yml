@@ -14,3 +14,4 @@ jobs:
           username: 'SparkleDEV'
           reponame: 'acnh-tracker'
           token: ${{ secrets.GITHUB_TOKEN }}
+          cname: acnhtracker.sparkle.gay
