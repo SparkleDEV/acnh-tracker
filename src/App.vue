@@ -1,6 +1,14 @@
 <template>
+	<SidelinkList />
 	<router-view />
 </template>
+
+<script>
+import SidelinkList from './components/Sidelinks/SidelinkList.vue'
+export default {
+	components: { SidelinkList }
+}
+</script>
 
 <style lang="scss">
 @use '@/assets/scss/util' as *;
