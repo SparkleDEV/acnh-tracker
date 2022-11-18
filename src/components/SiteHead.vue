@@ -1,7 +1,13 @@
 <template>
 	<div class="site-head">
-		<img src="@/assets/images/logo.png" alt="Logo with text saying Animal Crossing Collectible Tracker" class="logo" />
-		<h3 style="color: #eee; margin-top: 0">( Preview version )</h3>
+		<router-link to="/">
+			<img
+				src="@/assets/images/logo.png"
+				alt="Logo with text saying Animal Crossing Collectible Tracker"
+				class="logo"
+			/>
+		</router-link>
+		<h3 style="color: #eee; margin-top: 0; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25)">( Preview version )</h3>
 		<h2 class="page-title" v-if="title">{{ title }}</h2>
 		<div class="import-export-buttons">
 			<button class="import-btn" @click="pickFile()">Import data</button>
@@ -69,7 +75,8 @@ export default {
 	font-size: rem-calc(48);
 	margin-block-start: rem-calc(16);
 	margin-block-end: rem-calc(8);
-	color: #222;
+	color: #eee;
+	text-shadow: 2px 2px 2px rgba($black, 0.25);
 	font-family: $font-family__fink-heavy;
 }
 
