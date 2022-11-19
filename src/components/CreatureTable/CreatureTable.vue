@@ -1,12 +1,5 @@
 <template>
 	<div class="creature-table-view page-content">
-		<Toolbar
-			:northern_hemisphere="northern_hemisphere"
-			:current_month="current_month"
-			:show_only_spawning="show_only_spawning"
-			:show_only_disappearing="show_only_disappearing"
-			tab="creatures"
-		/>
 		<div class="catchable-table-wrapper">
 			<table class="creature-table catchable-table">
 				<thead>
@@ -40,11 +33,10 @@
 <script>
 import seacreatures from '@/assets/data/seacreatures.json'
 import CreatureTableEntry from '@/components/CreatureTable/CreatureTableEntry.vue'
-import Toolbar from '@/components/Toolbar.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
-	components: { CreatureTableEntry, Toolbar },
+	components: { CreatureTableEntry },
 	props: ['northern_hemisphere', 'current_month', 'show_only_spawning', 'show_only_disappearing'],
 	data() {
 		return {

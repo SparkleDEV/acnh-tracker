@@ -1,20 +1,5 @@
 <template>
 	<div class="song-table-view page-content">
-		<div class="toolbar">
-			<div class="tool tab-tool">
-				<select name="tab" v-model="tab" @change="updateTab">
-					<option value="fish">Fish</option>
-					<option value="bug">Bugs</option>
-					<option value="creatures">Sea creatures</option>
-					<option value="songs">Songs</option>
-				</select>
-			</div>
-			<div class="tool audio-tool">
-				<audio controls ref="audio" class="audio-player">
-					<source ref="audio_source" />
-				</audio>
-			</div>
-		</div>
 		<div class="catchable-table-wrapper">
 			<table class="song-table catchable-table">
 				<thead>
@@ -42,11 +27,10 @@
 <script>
 import songs from '@/assets/data/songs.json'
 import SongTableEntry from '@/components/SongTable/SongTableEntry.vue'
-import Toolbar from '@/components/Toolbar.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
-	components: { SongTableEntry, Toolbar },
+	components: { SongTableEntry },
 	data() {
 		return {
 			songs_data: songs.data,

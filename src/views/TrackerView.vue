@@ -69,6 +69,6 @@ export default {
 
 .tracker {
 	container-type: inline-size;
-	margin-top: rem-calc(16);
+	margin: rem-calc(16) rem-calc(16) 0;
 }
 </style>

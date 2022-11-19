@@ -1,12 +1,5 @@
 <template>
 	<div class="fish-table-view page-content">
-		<Toolbar
-			:northern_hemisphere="northern_hemisphere"
-			:current_month="current_month"
-			:show_only_spawning="show_only_spawning"
-			:show_only_disappearing="show_only_disappearing"
-			tab="fish"
-		/>
 		<div class="catchable-table-wrapper">
 			<table class="fish-table catchable-table">
 				<thead>
@@ -42,11 +35,10 @@
 <script>
 import fish from '@/assets/data/fish.json'
 import FishTableEntry from '@/components/FishTable/FishTableEntry.vue'
-import Toolbar from '@/components/Toolbar.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
-	components: { FishTableEntry, Toolbar },
+	components: { FishTableEntry },
 	props: ['northern_hemisphere', 'current_month', 'show_only_spawning', 'show_only_disappearing'],
 	data() {
 		return {

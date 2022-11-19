@@ -63,7 +63,7 @@ export default {
 	gap: rem-calc(4);
 	flex-wrap: wrap;
 	background-color: $toolbar-background;
-	border-top: 1px solid mix($toolbar-background, $black, 80);
+	border: 1px solid mix($toolbar-background, $black, 80);
 	border-bottom: none;
 
 	@container (max-width: #{$bp-medium}) {
