@@ -10,7 +10,6 @@
 	transition: background-color 0.3s;
 	cursor: pointer;
 	text-decoration: none;
-	margin: 0 rem-calc(4);
 
 	&:hover {
 		background-color: mix($background-color, #fff, 50);

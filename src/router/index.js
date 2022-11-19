@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import CatchListView from '../views/CatchListView.vue'
+import TrackerView from '../views/TrackerView.vue'
 import ShadowSizesView from '../views/ShadowSizesView.vue'
 
 const routes = [
 	{
 		path: '/',
-		name: 'catchlist',
-		component: CatchListView
+		redirect: { name: 'tracker' }
+	},
+	{
+		path: '/tracker',
+		name: 'tracker',
+		component: TrackerView
 	},
 	{
 		path: '/shadow-sizes',

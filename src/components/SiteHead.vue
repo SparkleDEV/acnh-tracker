@@ -7,7 +7,7 @@
 				class="logo"
 			/>
 		</router-link>
-		<h3 style="color: #eee; margin-top: 0; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25)">( Preview version )</h3>
+		<!-- <h3 style="color: #eee; margin-top: 0; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25)">( Preview version )</h3> -->
 		<h2 class="page-title" v-if="title">{{ title }}</h2>
 		<div class="import-export-buttons">
 			<button class="import-btn" @click="pickFile()">Import data</button>
@@ -67,8 +67,8 @@ export default {
 @use '@/assets/scss/util' as *;
 
 .site-head {
+	container-type: inline-size;
 	position: relative;
-	width: 100%;
 }
 
 .page-title {
@@ -90,8 +90,9 @@ export default {
 
 .logo {
 	width: rem-calc(300);
-	@media (max-width: 730px) {
-		margin-top: rem-calc(48);
+
+	@container (max-width: #{$bp-small}) {
+		width: rem-calc(230);
 	}
 }
 
@@ -99,6 +100,15 @@ export default {
 	position: absolute;
 	top: 0;
 	right: rem-calc(16);
+	display: flex;
+	flex-direction: row;
+	gap: rem-calc(8);
+
+	@container (max-width: #{$bp-medium}) {
+		position: unset;
+		margin-top: rem-calc(16);
+		justify-content: center;
+	}
 }
 
 .locale-selection {
@@ -108,14 +118,19 @@ export default {
 	display: flex;
 	align-items: center;
 
-	@media (max-width: 730px) {
-		align-items: flex-start;
-		flex-direction: column;
-	}
-
 	label {
 		color: $white;
 		margin-left: rem-calc(8);
+	}
+
+	@container (max-width: #{$bp-medium}) {
+		label {
+			display: none;
+		}
+
+		position: unset;
+		justify-content: center;
+		margin-top: rem-calc(16);
 	}
 }
 </style>
