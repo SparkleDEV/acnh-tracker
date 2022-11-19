@@ -17,13 +17,8 @@ select {
 }
 
 .page-content {
-	margin: 0 auto;
-	padding: rem-calc(50) rem-calc(80);
-	width: 100%;
-
-	@media (max-width: 730px) {
-		padding: rem-calc(50) rem-calc(30);
-	}
+	container-type: inline-size;
+	margin: rem-calc(16) rem-calc(16) 0;
 }
 
 .info-page-content {

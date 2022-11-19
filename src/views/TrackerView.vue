@@ -1,7 +1,7 @@
 <template>
 	<div class="tracker-view view-page">
 		<SiteHead />
-		<div class="tracker">
+		<div class="tracker page-content">
 			<TrackerToolbar
 				:valid_tabs="valid_tabs"
 				:tab="tab"
@@ -66,9 +66,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '@/assets/scss/util' as *;
-
-.tracker {
-	container-type: inline-size;
-	margin: rem-calc(16) rem-calc(16) 0;
-}
 </style>
