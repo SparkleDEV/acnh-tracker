@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CatchListView from '../views/CatchListView.vue'
 import TrackerView from '../views/TrackerView.vue'
 import ShadowSizesView from '../views/ShadowSizesView.vue'
 

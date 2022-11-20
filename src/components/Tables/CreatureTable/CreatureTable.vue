@@ -1,5 +1,5 @@
 <template>
-	<div class="creature-table-view page-content">
+	<div class="creature-table-view">
 		<div class="catchable-table-wrapper">
 			<table class="creature-table catchable-table">
 				<thead>
@@ -32,7 +32,7 @@
 
 <script>
 import seacreatures from '@/assets/data/seacreatures.json'
-import CreatureTableEntry from '@/components/CreatureTable/CreatureTableEntry.vue'
+import CreatureTableEntry from '@/components/Tables/CreatureTable/CreatureTableEntry.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {

@@ -1,5 +1,5 @@
 <template>
-	<div class="bug-table-view page-content">
+	<div class="bug-table-view">
 		<div class="catchable-table-wrapper">
 			<table class="bug-table catchable-table">
 				<thead>
@@ -32,8 +32,7 @@
 
 <script>
 import bugs from '@/assets/data/bugs.json'
-import BugTableEntry from '@/components/BugTable/BugTableEntry.vue'
-// import Toolbar from '@/components/Toolbar.vue'
+import BugTableEntry from '@/components/Tables/BugTable/BugTableEntry.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {

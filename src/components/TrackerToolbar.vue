@@ -62,11 +62,11 @@ export default {
 	padding: rem-calc(8) rem-calc(4);
 	gap: rem-calc(4);
 	flex-wrap: wrap;
-	background-color: $toolbar-background;
-	border: 1px solid mix($toolbar-background, $black, 80);
+	background-color: mix($row-background, $black, 70);
+	border: 2px solid mix($row-background, $black, 60);
 	border-bottom: none;
 
-	@container (max-width: #{$bp-medium}) {
+	@media (max-width: #{$bp-medium}) {
 		justify-content: flex-start;
 	}
 
@@ -82,7 +82,7 @@ export default {
 		&.tab {
 			margin-right: auto;
 
-			@container (max-width: #{$bp-medium}) {
+			@media (max-width: #{$bp-medium}) {
 				margin-right: unset;
 			}
 		}

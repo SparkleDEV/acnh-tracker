@@ -1,5 +1,5 @@
 <template>
-	<div class="fish-table-view page-content">
+	<div class="fish-table-view">
 		<div class="catchable-table-wrapper">
 			<table class="fish-table catchable-table">
 				<thead>
@@ -34,7 +34,7 @@
 
 <script>
 import fish from '@/assets/data/fish.json'
-import FishTableEntry from '@/components/FishTable/FishTableEntry.vue'
+import FishTableEntry from '@/components/Tables/FishTable/FishTableEntry.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
@@ -93,11 +93,3 @@ export default {
 	}
 }
 </script>
-
-<style lang="scss" scoped>
-@use '@/assets/scss/util' as *;
-
-.page-content {
-	max-width: rem-calc(1000);
-}
-</style>

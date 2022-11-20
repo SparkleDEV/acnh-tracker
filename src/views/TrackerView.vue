@@ -13,6 +13,33 @@
 				@showSpawningChange="handleShowSpawningChange"
 				@showDisappearingChange="handleShowDisappearingChange"
 			/>
+			<FishTable
+				:northern_hemisphere="northern_hemisphere"
+				:current_month="month"
+				:show_only_spawning="show_only_spawning"
+				:show_only_disappearing="show_only_disappearing"
+				v-if="tab == 'fish'"
+			/>
+			<BugTable
+				:northern_hemisphere="northern_hemisphere"
+				:current_month="month"
+				:show_only_spawning="show_only_spawning"
+				:show_only_disappearing="show_only_disappearing"
+				v-if="tab == 'bugs'"
+			/>
+			<CreatureTable
+				:northern_hemisphere="northern_hemisphere"
+				:current_month="month"
+				:show_only_spawning="show_only_spawning"
+				:show_only_disappearing="show_only_disappearing"
+				v-if="tab == 'creatures'"
+			/>
+			<SongTable v-if="tab == 'songs'" @playSong="playSong" />
+		</div>
+		<div class="audio-player" v-if="tab == 'songs'">
+			<audio controls ref="audio" class="audio-player">
+				<source ref="audio_source" />
+			</audio>
 		</div>
 	</div>
 </template>
@@ -20,9 +47,13 @@
 <script>
 import SiteHead from '@/components/SiteHead.vue'
 import TrackerToolbar from '@/components/TrackerToolbar.vue'
+import FishTable from '@/components/Tables/FishTable/FishTable.vue'
+import BugTable from '@/components/Tables/BugTable/BugTable.vue'
+import CreatureTable from '@/components/Tables/CreatureTable/CreatureTable.vue'
+import SongTable from '@/components/Tables/SongTable/SongTable.vue'
 
 export default {
-	components: { SiteHead, TrackerToolbar },
+	components: { SiteHead, TrackerToolbar, FishTable, BugTable, CreatureTable, SongTable },
 	data() {
 		return {
 			northern_hemisphere: this.$store.getters.isOnNorthernHemisphere,
@@ -56,6 +87,12 @@ export default {
 		},
 		handleShowDisappearingChange(newValue) {
 			this.show_only_disappearing = newValue
+		},
+		playSong(song) {
+			this.$refs.audio_source.src = song
+
+			this.$refs.audio.load()
+			this.$refs.audio.play()
 		}
 	},
 	mounted() {
@@ -66,4 +103,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '@/assets/scss/util' as *;
+
+.audio-player {
+	position: fixed;
+	bottom: rem-calc(16);
+	right: rem-calc(16);
+}
 </style>

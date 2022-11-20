@@ -17,8 +17,12 @@ select {
 }
 
 .page-content {
-	container-type: inline-size;
+	// container-type: inline-size;
 	margin: rem-calc(16) rem-calc(16) 0;
+
+	@media (max-width: #{$bp-small}) {
+		margin: rem-calc(16) 0 0;
+	}
 }
 
 .info-page-content {
@@ -27,7 +31,7 @@ select {
 	background-color: #f5f5f5;
 	border-radius: 3px;
 
-	@container (max-width: #{$bp-medium}) {
+	@media (max-width: #{$bp-medium}) {
 		margin: rem-calc(50) rem-calc(30);
 	}
 }
@@ -37,12 +41,10 @@ select {
 	width: rem-calc(1200);
 	background-color: rgba($black, 0.3);
 	padding: rem-calc(16) 0;
-	border-radius: 3px;
+	border-radius: 0 0 6px 6px;
 	margin: rem-calc(16) auto;
-}
 
-@container (max-width: #{$bp-large}) {
-	.view-page {
+	@media (max-width: #{$bp-large}) {
 		width: 100%;
 		margin: 0;
 	}
@@ -107,7 +109,7 @@ h6 {
 }
 
 .catchable-table-wrapper {
-	@media (max-width: 1200px) {
+	@media (max-width: #{$bp-large}) {
 		overflow-x: auto;
 		white-space: nowrap;
 		max-width: 100%;
@@ -115,7 +117,8 @@ h6 {
 
 	.catchable-table {
 		border-spacing: 0;
-		border: 2px solid mix($row-background, $black, 70);
+		border: 2px solid mix($row-background, $black, 60);
+		border-top: none;
 		border-radius: 4px;
 		position: relative;
 		color: $black;
@@ -123,12 +126,9 @@ h6 {
 
 		thead {
 			background-color: mix($row-background, $black, 80);
-			position: sticky;
-			top: -1px;
 
 			td {
 				padding: rem-calc(6) rem-calc(4);
-				border-bottom: 2px solid mix($row-background, $black, 70);
 				font-weight: bold;
 			}
 		}

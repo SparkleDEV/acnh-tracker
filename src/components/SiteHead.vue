@@ -7,7 +7,7 @@
 				class="logo"
 			/>
 		</router-link>
-		<!-- <h3 style="color: #eee; margin-top: 0; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25)">( Preview version )</h3> -->
+		<h3 style="color: #eee; margin-top: 0; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25)">( Preview version )</h3>
 		<h2 class="page-title" v-if="title">{{ title }}</h2>
 		<div class="import-export-buttons">
 			<button class="import-btn" @click="pickFile()">Import data</button>
@@ -67,7 +67,6 @@ export default {
 @use '@/assets/scss/util' as *;
 
 .site-head {
-	container-type: inline-size;
 	position: relative;
 }
 
@@ -91,7 +90,7 @@ export default {
 .logo {
 	width: rem-calc(300);
 
-	@container (max-width: #{$bp-small}) {
+	@media (max-width: #{$bp-small}) {
 		width: rem-calc(230);
 	}
 }
@@ -104,7 +103,7 @@ export default {
 	flex-direction: row;
 	gap: rem-calc(8);
 
-	@container (max-width: #{$bp-medium}) {
+	@media (max-width: #{$bp-medium}) {
 		position: unset;
 		margin-top: rem-calc(16);
 		justify-content: center;
@@ -123,7 +122,7 @@ export default {
 		margin-left: rem-calc(8);
 	}
 
-	@container (max-width: #{$bp-medium}) {
+	@media (max-width: #{$bp-medium}) {
 		label {
 			display: none;
 		}
