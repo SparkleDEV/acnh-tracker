@@ -1,5 +1,5 @@
 <template>
-	<!-- <SidelinkList /> -->
+	<SidelinkList />
 	<router-view />
 </template>
 
