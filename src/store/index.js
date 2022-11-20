@@ -91,6 +91,8 @@ export default createStore({
 				let data = JSON.parse(content)
 				state.caught_fish = data.caught_fish
 				state.caught_bugs = data.caught_bugs
+				state.caught_creatures = data.caught_creatures
+				state.collected_songs = data.collected_songs
 				state.locale = data.locale
 
 				localStorage.setItem('caught_fish', JSON.stringify(data.caught_fish))

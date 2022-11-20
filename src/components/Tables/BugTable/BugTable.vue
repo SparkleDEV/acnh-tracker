@@ -1,12 +1,5 @@
 <template>
-	<div class="bug-table-view page-content">
-		<Toolbar
-			:northern_hemisphere="northern_hemisphere"
-			:current_month="current_month"
-			:show_only_spawning="show_only_spawning"
-			:show_only_disappearing="show_only_disappearing"
-			tab="bug"
-		/>
+	<div class="bug-table-view">
 		<div class="catchable-table-wrapper">
 			<table class="bug-table catchable-table">
 				<thead>
@@ -39,12 +32,11 @@
 
 <script>
 import bugs from '@/assets/data/bugs.json'
-import BugTableEntry from '@/components/BugTable/BugTableEntry.vue'
-import Toolbar from '@/components/Toolbar.vue'
+import BugTableEntry from '@/components/Tables/BugTable/BugTableEntry.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
-	components: { BugTableEntry, Toolbar },
+	components: { BugTableEntry },
 	props: ['northern_hemisphere', 'current_month', 'show_only_spawning', 'show_only_disappearing'],
 	data() {
 		return {

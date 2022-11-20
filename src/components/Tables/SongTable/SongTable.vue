@@ -1,20 +1,5 @@
 <template>
-	<div class="song-table-view page-content">
-		<div class="toolbar">
-			<div class="tool tab-tool">
-				<select name="tab" v-model="tab" @change="updateTab">
-					<option value="fish">Fish</option>
-					<option value="bug">Bugs</option>
-					<option value="creatures">Sea creatures</option>
-					<option value="songs">Songs</option>
-				</select>
-			</div>
-			<div class="tool audio-tool">
-				<audio controls ref="audio" class="audio-player">
-					<source ref="audio_source" />
-				</audio>
-			</div>
-		</div>
+	<div class="song-table-view">
 		<div class="catchable-table-wrapper">
 			<table class="song-table catchable-table">
 				<thead>
@@ -36,21 +21,25 @@
 				</tbody>
 			</table>
 		</div>
+		<!-- <div class="audio-player">
+			<audio controls ref="audio" class="audio-player">
+				<source ref="audio_source" />
+			</audio>
+		</div> -->
 	</div>
 </template>
 
 <script>
 import songs from '@/assets/data/songs.json'
-import SongTableEntry from '@/components/SongTable/SongTableEntry.vue'
-import Toolbar from '@/components/Toolbar.vue'
+import SongTableEntry from '@/components/Tables/SongTable/SongTableEntry.vue'
 import translations from '@/assets/data/translations.json'
 
 export default {
-	components: { SongTableEntry, Toolbar },
+	components: { SongTableEntry },
+	emits: ['playSong'],
 	data() {
 		return {
-			songs_data: songs.data,
-			tab: 'songs'
+			songs_data: songs.data
 		}
 	},
 	methods: {
@@ -77,10 +66,7 @@ export default {
 			})
 		},
 		playSong(song) {
-			this.$refs.audio_source.src = song
-
-			this.$refs.audio.load()
-			this.$refs.audio.play()
+			this.$emit('playSong', song)
 		},
 		updateTab() {
 			this.$parent.tab = this.tab
@@ -94,10 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '@/assets/scss/util' as *;
-
-.page-content {
-	max-width: rem-calc(1000);
-}
 
 .audio-player {
 	position: fixed;
