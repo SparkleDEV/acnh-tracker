@@ -20,5 +20,6 @@ export default {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: $black;
+	// container-type: inline-size;
 }
 </style>

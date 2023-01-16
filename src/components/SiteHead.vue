@@ -68,7 +68,6 @@ export default {
 
 .site-head {
 	position: relative;
-	width: 100%;
 }
 
 .page-title {
@@ -90,8 +89,9 @@ export default {
 
 .logo {
 	width: rem-calc(300);
-	@media (max-width: 730px) {
-		margin-top: rem-calc(48);
+
+	@media (max-width: #{$bp-small}) {
+		width: rem-calc(230);
 	}
 }
 
@@ -99,6 +99,15 @@ export default {
 	position: absolute;
 	top: 0;
 	right: rem-calc(16);
+	display: flex;
+	flex-direction: row;
+	gap: rem-calc(8);
+
+	@media (max-width: #{$bp-medium}) {
+		position: unset;
+		margin-top: rem-calc(16);
+		justify-content: center;
+	}
 }
 
 .locale-selection {
@@ -108,14 +117,19 @@ export default {
 	display: flex;
 	align-items: center;
 
-	@media (max-width: 730px) {
-		align-items: flex-start;
-		flex-direction: column;
-	}
-
 	label {
 		color: $white;
 		margin-left: rem-calc(8);
+	}
+
+	@media (max-width: #{$bp-medium}) {
+		label {
+			display: none;
+		}
+
+		position: unset;
+		justify-content: center;
+		margin-top: rem-calc(16);
 	}
 }
 </style>
