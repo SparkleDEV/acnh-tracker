@@ -90,6 +90,11 @@ export default {
 	.art-preview-image {
 		max-width: 150px;
 		max-height: 150px;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(2);
+		}
 	}
 }
 </style>
