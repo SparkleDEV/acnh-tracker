@@ -1,0 +1,11 @@
+{
+	"$schema": "./schemas/art.schema.json",
+	"data": [
+		{
+			"id": "academic_painting",
+			"name_key": "art.name.academic_painting",
+			"description": "The forged painting has a coffee stain on the top right of the canvas whereas the genuine does not. The forgery's wooden frame is a duller color compared to the genuine's frame, and the white matboard is slightly dirtied by the left and bottom edges of the canvas. The forgery also has a strange key taped to the back.",
+			"has_fake": true
+		}
+	]
+}
