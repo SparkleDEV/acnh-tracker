@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"required": ["data"],
+	"properties": {
+		"data": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "An entry for a piece of art",
+				"required": ["id", "name_key", "has_fake"],
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "An unique identifier for the piece of art"
+					},
+					"name_key": {
+						"type": "string",
+						"description": "The i18n key for the name of the piece of art"
+					},
+					"description": {
+						"type": "string",
+						"description": "The description for the piece of art"
+					},
+					"has_fake": {
+						"type": "boolean",
+						"description": "If the piece of art has a fake version"
+					}
+				}
+			}
+		}
+	}
+}

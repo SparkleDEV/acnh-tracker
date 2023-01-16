@@ -7,6 +7,7 @@ export default createStore({
 		caught_bugs: localStorage.caught_bugs ? JSON.parse(localStorage.caught_bugs) : [],
 		caught_creatures: localStorage.caught_creatures ? JSON.parse(localStorage.caught_creatures) : [],
 		collected_songs: localStorage.collected_songs ? JSON.parse(localStorage.collected_songs) : [],
+		collected_art: localStorage.collected_art ? JSON.parse(localStorage.collected_art) : [],
 		northern_hemisphere: localStorage.getItem('northern_hemisphere'),
 		settings: {}
 	},
@@ -23,6 +24,9 @@ export default createStore({
 		hasCollectedSong: (state) => (song_id) => {
 			return state.collected_songs.includes(song_id)
 		},
+		hasCollectedArt: (state) => (art_id) => {
+			return state.collected_art.includes(art_id)
+		},
 		isOnNorthernHemisphere: (state) => {
 			if (state.northern_hemisphere == null) return true
 			return state.northern_hemisphere
@@ -34,6 +38,7 @@ export default createStore({
 			data.caught_bugs = state.caught_bugs
 			data.caught_creatures = state.caught_creatures
 			data.collected_songs = state.collected_songs
+			data.collected_art = state.collected_art
 			data.locale = state.locale
 
 			return JSON.stringify(data)
@@ -79,6 +84,14 @@ export default createStore({
 			}
 			localStorage.setItem('collected_songs', JSON.stringify(state.collected_songs))
 		},
+		toggleArtCollectState(state, id) {
+			if (state.collected_art.includes(id)) {
+				state.collected_art = state.collected_art.filter((f) => f != id)
+			} else {
+				state.collected_art.push(id)
+			}
+			localStorage.setItem('collected_art', JSON.stringify(state.collected_art))
+		},
 		setNorthernHemisphere(state, value) {
 			state.northern_hemisphere = value
 			localStorage.setItem('northern_hemisphere', value)
@@ -93,12 +106,14 @@ export default createStore({
 				state.caught_bugs = data.caught_bugs
 				state.caught_creatures = data.caught_creatures
 				state.collected_songs = data.collected_songs
+				state.collected_art = data.collected_art
 				state.locale = data.locale
 
 				localStorage.setItem('caught_fish', JSON.stringify(data.caught_fish))
 				localStorage.setItem('caught_bugs', JSON.stringify(data.caught_bugs))
 				localStorage.setItem('caught_creatures', JSON.stringify(data.caught_creatures))
 				localStorage.setItem('collected_songs', JSON.stringify(data.collected_songs))
+				localStorage.setItem('collected_art', JSON.stringify(data.collected_art))
 				localStorage.setItem('locale', data.locale)
 				alert('Data has been imported successfully (page reload is recommended)')
 			} catch {

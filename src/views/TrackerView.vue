@@ -35,6 +35,7 @@
 				v-if="tab == 'creatures'"
 			/>
 			<SongTable v-if="tab == 'songs'" @playSong="playSong" />
+			<ArtTable v-if="tab == 'art'" />
 		</div>
 		<div class="audio-player" v-if="tab == 'songs'">
 			<audio controls ref="audio" class="audio-player">
@@ -51,9 +52,10 @@ import FishTable from '@/components/Tables/FishTable/FishTable.vue'
 import BugTable from '@/components/Tables/BugTable/BugTable.vue'
 import CreatureTable from '@/components/Tables/CreatureTable/CreatureTable.vue'
 import SongTable from '@/components/Tables/SongTable/SongTable.vue'
+import ArtTable from '@/components/Tables/ArtTable/ArtTable.vue'
 
 export default {
-	components: { SiteHead, TrackerToolbar, FishTable, BugTable, CreatureTable, SongTable },
+	components: { SiteHead, TrackerToolbar, FishTable, BugTable, CreatureTable, SongTable, ArtTable },
 	data() {
 		return {
 			northern_hemisphere: this.$store.getters.isOnNorthernHemisphere,
@@ -66,7 +68,8 @@ export default {
 				{ id: 'fish', name: 'Fish' },
 				{ id: 'bugs', name: 'Bugs' },
 				{ id: 'creatures', name: 'Sea creatures' },
-				{ id: 'songs', name: 'Songs' }
+				{ id: 'songs', name: 'Songs' },
+				{ id: 'art', name: 'Art' }
 			]
 		}
 	},
