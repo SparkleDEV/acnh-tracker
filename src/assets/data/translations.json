@@ -306,7 +306,9 @@
 		"song.name.imperial_k_k": "Imperial K.K.",
 		"song.name.surfin_k_k": "Surfin' K.K.",
 		"song.name.two_days_ago": "Two Days Ago",
-		"song.name.forest_life": "Forest Life"
+		"song.name.forest_life": "Forest Life",
+
+		"art.name.academic_painting": "Academic painting"
 	},
 	"de": {
 		"fish.name.anchovy": "Sardelle",
