@@ -15,8 +15,11 @@
 			</div>
 		</td>
 		<td class="description" @click="expanded = !expanded">
-			<span class="expand">Click to expand</span>
-			<p class="desc-content" :class="{ open: expanded }">{{ description }}</p>
+			<div v-if="has_fake">
+				<span class="expand">Click to expand</span>
+				<p class="desc-content" :class="{ open: expanded }">{{ description }}</p>
+			</div>
+			<div v-else>N/A</div>
 		</td>
 	</tr>
 </template>

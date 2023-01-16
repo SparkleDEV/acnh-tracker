@@ -8,7 +8,7 @@
 			"items": {
 				"type": "object",
 				"description": "An entry for a piece of art",
-				"required": ["id", "name_key", "description", "has_fake"],
+				"required": ["id", "name_key", "has_fake"],
 				"properties": {
 					"id": {
 						"type": "string",
